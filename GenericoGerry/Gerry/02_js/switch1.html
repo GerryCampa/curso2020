@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. SWITCH. MESES</h6>
+    <script>
+        var numMes, year;
+
+        numMes = prompt("Número de mes");
+        numMes = parseFloat(numMes);
+
+        switch (numMes) {
+
+            case 1:
+                document.write("Enero tiene 31 días");
+                break;
+
+            case 2:
+                year = parseFloat(prompt("Año?"));
+                
+            
+                if(year%4 ==0 && year%100 !=0 | year % 400 ==0) {
+
+                    document.write("Febrero tiene 29 días");
+
+
+                    }
+
+                    else {
+                        document.write("Febrero tiene 28 días")
+                        }
+                break;
+
+                
+                
+
+            case 3:
+                document.write("Marzo tiene 31 días");
+                break;
+
+            case 4:
+                document.write("Abril tiene 30 días");
+                break;
+
+            case 5:
+                document.write("Mayo tiene 31 días");
+                break;
+
+            case 6:
+                document.write("Junio tiene 30 días");
+                break;
+
+            case 7:
+                document.write("Julio tiene 31 días");
+                break;
+
+            case 8:
+                document.write("Agosto tiene 31 días");
+                break;
+
+            case 9:
+                document.write("Septiembre tiene 30 días");
+                break;
+
+            case 10:
+                document.write("Octubre tiene 31 días");
+                break;
+
+            case 11:
+                document.write("Noviembre tiene 30 días");
+                break;
+
+            case 12:
+                document.write("Diciembre tiene 31 días");
+                break;
+
+
+            default:
+                document.write("Error en nombre de mes")
+
+        }
+
+        document.write("</br>" + "Fin de programa")
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. INCREMENTAR PRECIO +20% SI>100. INCREMENTAR +15% SI<100</h6>
+
+
+    <script>
+       
+              
+
+        //precio---------------------------
+
+
+        var precio;
+
+        precio = prompt("Escribe el precio");
+        precio=parseFloat(precio);
+
+
+        if (precio>100) {
+
+            precio=precio*1.2;
+
+            document.write("El precio ahora es " + precio + " por ser mayor de 100 euros "+ 
+            "<br/>");
+
+        }
+
+        else{
+
+            precio=precio*1.15;
+
+            document.write("El precio ahora es " + precio + " por ser menor de 100 euros " +
+            "<br/>");
+
+
+        }
+
+
+        
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>FUNCIONES. CONVERSION MILLAS Y KILÓMETROS</h6>
+
+
+    <script>
+        function convertidor(resultado, opcion) {
+
+            if (opcion == 1) {
+
+                resultado = (resultado * 8) / 5;
+            } else {resultado = (resultado * 5 )/ 8;
+
+            }
+
+
+            return resultado;
+        }
+
+
+
+        
+        var num;
+        var opc;
+
+        num = parseInt(prompt("Introduzca número a convertir"));
+        opc= parseInt(prompt("Introduzca 1 (km a millas) o 2 (millas a km)"));
+
+
+
+        document.write(convertidor(num,opc));
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Favicon link -->
+
+    <link rel="icon" type="image/x-icon"
+        href="http://icons.iconarchive.com/icons/yellowicon/game-stars/128/Mario-icon.png">
+
+
+</head>
+
+
+<body
+    style="background: var(--gray-100); width: 800px; margin: 60px auto; box-shadow: 2px 6px 4px rgba(0,0,0,.2),-2px -6px 8px rgba(0,0,0,.1); border-radius:4px; padding: 60px; font-family: 'Open Sans', sans-serif; border-bottom:var(--gray-400) solid 15px;">
+
+
+    <div class="text-center">
+
+        <h1 style="text-align:center;">Ejercicio FORMULARIOS AVANZADOS (2)</h1>
+
+
+    </div>
+
+
+    <form action="/php/insertarcv.php" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+
+            <legend>Datos básicos</legend>
+
+
+            <strong>Nombre</strong>
+
+            <input type="text" id="precio" name="precio" value="" size="30" maxlength="31">
+
+            <br>
+            <br>
+
+
+
+            <strong>Descripción</strong>
+            <br>
+
+            <textarea rows="4" cols="50">
+
+                </textarea>
+
+                <strong>Incluir foto</strong>
+                <input type="file" name="enviar" src="accept.png" size="30">
+
+                <br>
+
+                <br>
+
+
+
+
+        <input type="checkbox">
+        <strong>Añadir contacto</strong>
+
+
+
+
+
+
+
+        </fieldset>
+
+        <br><br>
+
+
+        <fieldset>
+
+            <legend>Datos económicos</legend>
+
+
+            <strong>Precio</strong>
+
+            <input type="text" id="precio" name="precio" value="" size="6" maxlength="7">
+            <strong>€ </strong>
+
+            <strong>Impuestos</strong>
+
+
+            <select id="impuesto" name="impuesto">
+                <option value='5%'>5%</option>
+                <option value='10%'>10%</option>
+                <option value='15%'>15%</option>
+
+            </select>
+            <br>
+            <br>
+
+
+            <strong>Promocións</strong>
+
+           
+        <br>
+        <input type="radio" name="promo" value="ninguno"> Ninguno<br>
+        <input type="radio" name="promo" value="gratis"> Gratis<br>
+        <input type="radio" name="promo" value="cinco"> 5%<br> 
+        
+        <input type="color" name="color">
+
+        <br>
+
+
+
+
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+        </fieldset>
+
+    </form>
+
+
+    <br>
+
+    <br>
+
+
+    <div class="text-center">
+
+        <a href="../index.html"> Volver al inicio</a>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

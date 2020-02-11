@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Clase Math</title>
+</head>
+
+<body>
+    <h3>Métodos de la clase Math</h3>
+    <hr><br />
+    <script language="javascript" type="text/javascript">
+        //pedir cuatro valores a,b,c,d
+
+        var numA = prompt("Introduzca el número a");
+        var numB = prompt("Introduzca el número b");
+        var numC = prompt("Introduzca el número c");
+
+
+        //mostrar el valor absoluto del primero
+
+
+        document.write("El valor absoluto de " + numA + " es: " + Math.abs(numA) + "</br>" + "<br>");
+
+        //redondear por arriba el primero
+
+
+        document.write("El valor redondado hacia arriba de " + numA + " es: " + Math.ceil(numA) + "</br>" + "<br>");
+
+
+
+        //redondear por abajo el segundo
+
+        document.write("El valor redondado hacia abajo de " + numB + " es: " + Math.floor(numB) + "</br>" + "<br>");
+
+        //redondear el primero al mas próximo
+
+        document.write("El valor redondado al más próximo " + numA + " es: " + Math.round(numA) + "</br>" + "<br>");
+
+        //raiz cuadrada del primer numero
+
+
+        document.write("La raiz cuadrada de " + numA + " es: " + Math.sqrt(numA) + "</br>" + "<br>");
+
+
+        //raiz cuadrada redondeado
+
+        document.write("La raiz cuadrada redondeada de " + numA + " es: " + Math.round(Math.sqrt(numA)) + "</br>" +
+            "<br>");
+
+        //mayor de los cuatro numeros
+
+        document.write("La mayor de los números " + numA + "  " + numB + "  " + numC + " es: " + Math.max(numA, numB,
+            numC) + "</br>" + "<br>");
+
+
+        //menor de los cuatro numeros
+
+        document.write("El menor de los números " + numA + "  " + numB + "  " + numC + " es: " + Math.min(numA, numB,
+            numC) + "</br>" + "<br>");
+
+
+        //tercera potencia del primer numero
+
+        document.write("El número " + numA + " elevado a 3 es: " + Math.pow(numA, 3) + "</br>" + "<br>");
+
+
+
+        //tercera potencia redondeada
+
+
+        document.write("El número " + numA + " elevado a 3 y redondeado es: " + Math.round(Math.pow(numA, 3)) +
+            "</br>" + "<br>");
+
+
+
+
+        //obtener los raices de una ecuacion de segundo grado con los 3 primeros datos
+
+
+        var result = (-1 * numB + Math.sqrt(Math.pow(numB, 2) - (4 * numA * numC))) / (2 * numA);
+        var result2 = (-1 * numB - Math.sqrt(Math.pow(numB, 2) - (4 * numA * numC))) / (2 * numA);
+
+
+
+
+        document.write("Las soluciones a la ecuación "+numA+"X2"+numB+"X"+numC+" son: " + result + " y " + result2);
+    </script>
+
+
+
+</body>
+
+</html>

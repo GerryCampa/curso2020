@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<title>FUNCIONES con ARRAY</title>
+	<script language="javascript" type="text/javascript" src="FuncionesArray.js">
+	</script>
+
+</head>
+
+<body>
+
+
+	<h1>TRABAJANDO CON CADENAS</h1>
+
+	<script language="javascript" type="text/javascript">
+		/*Crear programa cara cargar email e implementar funcion q verifique contiene @, "." y la extension sea dicampus*/
+
+
+
+
+		//funcion
+
+		function validarDire(email) {
+
+
+			var posicionArroba;
+			var dominio;
+			var validez;
+
+			posicionArroba = dire.indexOf("@");
+			posicionPunto = dire.LastIindexOf(".");
+			dominio = dire.substring(posicionArroba + 1, posicionPunto);
+
+
+			if (posicionArroba != -1 && poscionPunto > posicionArroba && dominio.toLowerCase() == "dicampus") {
+
+				validez = true;
+
+			} else {
+
+				validez = false;
+			}
+			return validez;
+		}
+
+
+
+		//programa principal
+
+		var protodire = prompt("Introduzca su dirección de correo");
+
+		var dire = protodire.toLowerCase();
+
+
+
+		if (validarDire(dire) == true) {
+
+			document.write(dire + " válida");
+
+		} else {
+
+			document.write(dire + " wrong");
+		}
+	</script>
+
+
+</body>
+
+</html>

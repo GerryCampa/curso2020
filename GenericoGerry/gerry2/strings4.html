@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Métodos de la clase string</title>
+    <script language="javascript" type="text/javascript" src="FuncionesArray.js">
+    </script>
+
+</head>
+
+<html>
+
+<body>
+
+
+    <h1>TRABAJANDO CON CADENAS</h1>
+    <h3>Métodos de la Clase String</h3>
+
+    Realizar un programa que pida una cadena de texto y muestre si es palíndromo.
+
+    <br>
+    <br>
+
+
+    <script language="
+    
+    javascript" type="text/javascript">
+        //funcion palindromo
+
+
+        function palindromo(texto) {
+            // retornará true si palindromo
+            //retornará false si no palindromo
+
+            var esPalindromo = true;
+            var j = texto.length - 1;
+
+            for (var i = 0; i <= j; i++) {
+
+                if (texto.toUppercase().charAt(i) != texto.toUppercase().charAt(j)) {
+
+                    esPalindromo = false;
+
+
+                }
+                j--;
+
+               
+
+
+            }
+
+            return esPalindromo;
+        }
+
+
+
+            //programa principal
+
+            var cadena = prompt("Introduzca un texto");
+
+            if (palindromo(cadena) == true) {
+
+                document.write(cadena + " es palíndromo")
+            }
+    </script>
+
+
+</body>
+
+</html>

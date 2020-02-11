@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Métodos de la clase string</title>
+    <script language="javascript" type="text/javascript" src="FuncionesArray.js">
+    </script>
+
+</head>
+
+<html>
+
+<body>
+
+
+    <h1>TRABAJANDO CON CADENAS</h1>
+    <h3>Métodos de la Clase String</h3>
+
+    Realizar un programa que pida una cadena de texto y muestre cuántos caracteres tiene, cuántas vocales y cuántas no
+    vocales. Para las vocales crea una función.
+
+    <br>
+    <br>
+
+
+    <script language="
+    
+    javascript" type="text/javascript">
+        //funcion vocales
+
+
+
+
+
+        //programa principal
+
+        var texto = prompt("Introduzca texto");
+        var consonantes = 0;
+        var a = 0;
+        var e = 0;
+        var i = 0;
+        var o = 0;
+        var u = 0;
+
+        for (conteo = 0; conteo <= texto.length; conteo++) {
+
+            if (texto.charAt(conteo).match(/[aeiou]/)) {
+                a++;
+                e++;
+                i++;
+                o++;
+                u++;
+            } 
+            
+            else if (texto.charAt(conteo).match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/)) {
+                consonantes++;
+            }
+
+            
+
+        }
+
+        document.write("Total vocales " + a+"</br>"+"</br>" );
+
+        document.write("Total consonantes " + consonantes);
+    </script>
+
+
+</body>
+
+</html>

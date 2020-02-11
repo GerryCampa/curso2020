@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Métodos de la clase string</title>
+    <script language="javascript" type="text/javascript" src="FuncionesArray.js">
+    </script>
+
+</head>
+
+<html>
+
+<body>
+
+
+    <h1>TRABAJANDO CON CADENAS</h1>
+    <h3>Métodos de la Clase String</h3>
+
+    Realizar un programa que pida una cadena de texto y si es palíndromo.
+
+    <br>
+    <br>
+
+
+    <script language="javascript" type="text/javascript">
+        //funcion palindromo
+
+
+        function palindromo(cadena) {
+            // cambinar a minusculas
+
+
+            var texto = cadena.toLowerCase();
+
+
+            var conteo = 0;
+
+
+            // comprobar si hay texto
+
+            if (texto === "") {
+                document.write("No has intruducido nada");
+                return false;
+            }
+
+            // comprobar si el conteo es par o impar 
+
+            if ((texto.length) % 2 === 0) {
+                (conteo = texto.length) / 2;
+            } else {
+
+                // si solo hay una letra es un palindromo
+
+                if (texto.length === 1) {
+                    document.write("Solo hay una letra y es un palíndromo.");
+                    return true;
+                } else {
+
+                    // Ignorar caracter del medio si la cadena es impar
+
+                    conteo = (texto.length - 1) / 2;
+                }
+            }
+
+            // lazo para comparar primer y ultimo caracter y seguir
+
+            for (var i = 0; x < conteo; i++) {
+
+                // comparar caracteres y descartar si no iguales
+                if (texto[i] != texto.slice(-1 - i)[0]) {
+                    document.write("El texto no es un palindromo");
+                    return false;
+                }
+            }
+
+        }
+
+        //programa principal
+
+        cadena = prompt("Introduzca texto");
+    </script>
+
+
+</body>
+
+</html>

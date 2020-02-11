@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Clase Math</title>
+</head>
+
+<body>
+    <h3>Métodos de la clase Math</h3>
+    <hr><br />
+    <script language="javascript" type="text/javascript">
+        var hoy = new Date();
+        var dd = String(hoy.getDay()).padStart(2, '0');
+        var mm = String(hoy.getMonth() + 1).padStart(2, '0'); //Enero es 0!
+        var aaaa = hoy.getFullYear();
+
+        var hora = hoy.getTime();
+
+        hoy = mm + '/' + dd + '/' + aaaa;
+        document.write(hoy + "</br>" + "</br>");
+
+
+//--------------TRIMESTRE-------------
+        if (mm <= 3) {
+
+            document.write("Estamos en el primer trimestre del año"+"</br>"+"</br>");
+        }
+//--------------------DIA SEMANA------
+        if (dd == 0) {
+
+            document.write("Hoy es Domingo"+"</br>"+"</br>");
+        }
+
+        if (dd ==1) {
+
+            document.write("Hoy es Lunes"+"</br>"+"</br>");
+        }
+
+        if (dd == 2) {
+
+            document.write("Hoy es Martes"+"</br>"+"</br>");
+        }
+
+
+        //---------------HORA----------
+
+        document.write("La hora actual es "+hora+"</br>"+"</br>");
+
+
+    </script>
+
+
+
+</body>
+
+</html>

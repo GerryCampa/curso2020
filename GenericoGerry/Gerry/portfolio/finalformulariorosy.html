@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/stylerosy.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="formulario">
+            <h1> <img class="alinear" src="../img/checka.png" alt=""> Registro</h1>
+            <form action="pp.html" method="post">
+
+                <fieldset id="registro">
+                    <legend>Detalles de la Cuenta</legend>
+                    <div id="caja1">
+                        <div id="izquierda">
+                            <div id="correo">
+                                <label class="titulo" for="email" id="correos">Email*</label>
+                                <input class="rellenar" type="email" name="email" size="14" id="email">
+                            </div>
+                            <div id="contrase">
+                                <label class="titulo" id="contra" for="password">Contraseña*</label>
+                                <input class="rellenar" type="password" name="password" size="14" id="password">
+                            </div>
+                        </div>
+                        <div id="derecha">
+                            <div id="repem">
+                                <label class="titulo" id="rep" for="repeat">Repetir Email*</label>
+                                <input class="rellenar" type="email" name="repeat" id="repetir" size="14">
+                            </div>
+                            <div id="repco">
+                                <label class="titulo" id="reco" for="repeatpassword">Repetir Contraseña*</label>
+                                <input class="rellenar" type="password" name="repeatpassword" size="14" id="repas">
+                            </div>
+                        </div>
+                        <div id="obligar">
+                            <strong> *Campos Obligatorios</strong>
+                        </div>
+                    </div>
+                </fieldset>
+                <div id="contenido">
+                    <fieldset id="personales">
+                        <legend>Datos Personales</legend>
+                        <div id="caja2">
+                            <div id="name">
+                                <label class="titulos" id="nombre" for="nombre">Nombre*</label>
+                                <input class="rellenar" type="text" name="nombre" id="nom">
+                            </div>
+                            <div id="tel">
+                                <label class="titulos" id="tele" for="phone">Teléfono*</label>
+                                <input class="rellenar" type="tel" name="phone" id="phone">
+                            </div>
+                            <div id="calle">
+                                <label class="titulos" id="direccion" for="calle">Dirección*</label>
+                                <input class="rellenar" type="text" name="calle" id="dire">
+                            </div>
+                            <div id="adress">
+                                <label class="titulos" id="lugar" for="pais">Pais*</label>
+                                <select class="rellenar" name="paid" id="pais">
+                                    <optgroup label="Pais">
+                                        <option value="españa" selected>españa</option>
+                                        <option value="alemania">alemania</option>
+                                        <option value="Francia">Francia</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div id="web">
+                                <label class="titulos" id="sitio" for="web">Website</label>
+                                <input class="rellenar" id="tusitio" type="text" name="web" placeholder="http//:">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="otros">
+                        <legend>Más Información</legend>
+                        <div id="caja3">
+                            <div id="genero">
+                        <label class="especial" for="genero">Genero*</label>
+                        <input class="especiales" type="radio" id="h" value="Hombre" name="sexo" checked="checked" /> <label
+                            for="h">Hombre</label>
+                        <input type="radio" id="h" value="Mujer" name="sexo" /> <label for="h">Mujer</label> <br>
+                    </div>
+                    <div id="nacimiento">
+                        <label class="especial" for="cumpleaños">Fecha de Nacimiento*</label>
+                        <select name="día" id="día">
+                            <option value="enero" selected>01</option>
+                            <option value="febrero">02</option>
+                            <option value="marzo">03</option>
+                            <option value="abril">04</option>
+                            <option value="mayo">05</option>
+                            <option value="junio">06</option>
+                            <option value="julio">07</option>
+                            <option value="agosto">08</option>
+                            <option value="septiembre">09</option>
+                            <option value="octubre">10</option>
+                            <option value="noviembre">11</option>
+                            <option value="diciembre">12</option>
+                            <option value="diciembre">13</option>
+                            <option value="diciembre">14</option>
+                            <option value="diciembre">15</option>
+                            <option value="diciembre">16</option>
+                            <option value="diciembre">17</option>
+                            <option value="diciembre">18</option>
+                            <option value="diciembre">19</option>
+                            <option value="diciembre">20</option>
+                            <option value="diciembre">21</option>
+                            <option value="diciembre">22</option>
+                            <option value="diciembre">23</option>
+                            <option value="diciembre">24</option>
+                            <option value="diciembre">25</option>
+                            <option value="diciembre">26</option>
+                            <option value="diciembre">27</option>
+                            <option value="diciembre">28</option>
+                            <option value="diciembre">29</option>
+                            <option value="diciembre">30</option>
+                            <option value="diciembre">31</option>
+                        </select>
+                        <select name="mes" id="mes">
+                            <option value="enero" selected>Enero</option>
+                            <option value="febrero">Febrero</option>
+                            <option value="marzo">Marzo</option>
+                            <option value="abril">Abril</option>
+                            <option value="mayo">Mayo</option>
+                            <option value="junio">Junio</option>
+                            <option value="julio">Julio</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="septiembre">Septiembre</option>
+                            <option value="octubre">Octubre</option>
+                            <option value="noviembre">Noviembre</option>
+                            <option value="diciembre">Diciembre</option>
+                        </select>
+                        <input type="text" maxlength="4" name="año" size="4">
+                    </div>
+                    <div id="nacionalidad">
+                        <label class="especial" for="nacionalidad">Nacionalidad*</label>
+                        <select name="nacionalidad" >
+                            <optgroup label="nacionalidad">
+                                <option value="gijon" selected>Española</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="andalucia">Andalucía</option>
+                            </optgroup>
+                        </select>
+                        </div>
+                        <div id="hijos">
+                        <label class="especial" for="hijos">Hijos*</label>
+                        <input type="checkbox" name="hijos" >
+                    </div>
+                </div>
+                        <div id="texto">
+                            <h4>INFORMACIÓN ÚTIL</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore rem excepturi
+                                natus
+                                laborum ducimus. Officia numquam atque, architecto nesciunt tempore voluptatem magnam
+                                placeat, sapiente cumque quae ipsam, eius aliquam.</p>
+                        </div>
+                 
+                    </fieldset>
+                </div>
+                <div id="term">
+                    <fieldset id="terminos">
+                        <legend>Terminos</legend>
+                        <input type="checkbox" name="acepto" id="acepto"> <label for="condiciones">*Yo acepto
+                            blablabñablab
+                            lablabla</label> <br>
+                        <input type="checkbox" name="acepto" id="acepto"><label for="condiciones">Yo acepto
+                            blablabñablab
+                            lablabla</label> <br>
+                        <input type="checkbox" name="acepto" id="acepto"><label for="condiciones"> Recibiré
+                            blablabñablab
+                            lablabla</label>
+                    </fieldset>
+                </div>
+                <div id="boton"><button id="btn">Enviar</button>
+                </div>
+                <div id="vacio"></div>
+
+            </form>
+        </div>
+
+        <div class="text-center">
+
+            <a href="../index.html"> Volver al inicio</a>
+    
+        </div>
+    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+
+<body>
+<h3>Métodos de la Clase Array: concat | join | pop | push | reverse | shift</h3>
+
+<script language="javascript" type="text/javascript">
+
+
+
+function indicarMayor(array) {
+
+	var mayor=array[0];
+	for(var i=0;i<array.length;i++) {
+		if(array[i]>mayor) {
+		mayor=array[i];
+		}
+	}
+	return mayor;
+}
+
+var alumnos=new Array();
+var notas=new Array();
+
+
+for(i=0;i<6;i++){
+	alumnos[i]=prompt("Nombre del alumno");
+}
+document.write("Los alumnos son:  <br/>");
+for(i=0;i<6;i++){
+	document.write(alumnos[i] + " - ");
+}
+
+for(i=0;i<6;i++){
+	for(j=0;j<1;j++){
+	notas[i]=parseInt(prompt("Escriba la nota de " +alumnos[i]));
+	}
+}
+document.write("<br/><br/>");
+// Mostrar cada alumno con su nota
+document.write("Las notas de cada alumno son:  <br/>");
+for(i=0;i<6;i++){
+	for(j=0;j<1;j++){
+	document.write(alumnos[i] +" - " +notas[i]);
+	}
+	document.write("<br/>");
+}
+
+
+
+// Unirlo todo en otro Array
+
+var todo = alumnos.concat(notas);
+
+
+
+
+
+// Mostrar separando con /
+
+document.write(todo.join(" - "));
+
+
+
+
+//Anadir alumno pedido por teclado
+
+var nuevoAlumno;
+
+nuevoAlumno=prompt("Introduzca un nuevo alumno  ");
+todo.push(nuevoAlumno);
+
+document.write("</br>"+"</br>"+"El nuevo listado tras añadir un alumno es: "+todo.join(" - "));
+
+
+
+
+
+//Nueva nota
+
+
+var nuevaNota;
+
+nuevaNota=prompt("Introduzca una nueva nota  ");
+todo.push(nuevaNota);
+
+
+
+
+
+
+// Volver a unir y mostrar
+
+
+document.write("</br>"+"</br>"+"El nuevo nuevo listado tras añadir una nota es: "+todo.join(" - "));
+
+
+
+
+// Eliminar el ultimo alumno con su nota y mostrar todo
+
+todo.pop();
+todo.pop();
+
+
+document.write("</br>"+"</br>"+"El nuevo nuevo listado tras eliminar el último alumno y su nota es: "+todo.join(" - "));
+
+
+
+// Eliminar el primero con su nota
+
+todo.splice(0,1);
+todo.splice(5,1);
+
+document.write("</br>"+"</br>"+"El nuevo nuevo listado tras eliminar el primer alumno y su nota es: "+todo.join(" - "));
+
+
+
+
+
+//Escribo las notas actuales
+
+
+var nuevaListaNotas = todo.slice(5,10);
+
+document.write("</br>"+"</br>"+"El nuevo nuevo listado de notas es: "+nuevaListaNotas.join(" - "));
+
+
+
+
+//Ordenar las notas. RESOLVER PROBLEMA DE ORDEN ALFANUMERICO!!!!!
+
+nuevaListaNotas.sort();
+
+
+document.write("</br>"+"</br>"+"Las notas de menor a mayor son: "+nuevaListaNotas.join(" - "));
+
+
+// Mostrar la nota más grande
+
+
+document.write("</br>"+"</br>"+"La nota más alta es: "+nuevaListaNotas [4]);
+
+
+
+
+
+//Escribir la mayor y la menor
+
+
+document.write("</br>"+"</br>"+"La nota más baja es: "+nuevaListaNotas [0]);
+
+
+
+
+// Mostar las 4 mejores y llevarlas a un nuevo array
+
+var mejoresNotas=nuevaListaNotas.slice(1,10);
+
+document.write("</br>"+"</br>"+"La cuatro mejores notas son: "+mejoresNotas.join(" "));
+
+
+
+
+//Añadir un nuevo alumno al principio con su nota
+
+var nuevaListaAlumnos = todo.slice(0,5);
+nuevaListaAlumnos.unshift("Juan");
+nuevaListaNotas.unshift("10");
+
+var listaFinal=nuevaListaAlumnos.concat(nuevaListaNotas);
+
+
+document.write("</br>"+"</br>"+"La lista final con un nuevo alumno añadido al principio y su nota al principio queda así: "+listaFinal.join(" "));
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>	 

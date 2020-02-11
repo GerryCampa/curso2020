@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Favicon link -->
+
+    <link rel="icon" type="image/x-icon"
+        href="http://icons.iconarchive.com/icons/yellowicon/game-stars/128/Mario-icon.png">
+
+
+</head>
+
+
+<body
+    style="background: var(--gray-100); width: 800px; margin: 60px auto; box-shadow: 2px 6px 4px rgba(0,0,0,.2),-2px -6px 8px rgba(0,0,0,.1); border-radius:4px; padding: 60px; font-family: 'Open Sans', sans-serif; border-bottom:var(--gray-400) solid 15px;">
+
+
+    <div class="text-center">
+
+        <h1 style="text-align:center;">Ejercicio FORMULARIOS AVANZADOS</h1>
+
+
+    </div>
+
+
+    <form action="/php/insertarcv.php" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+
+            <legend>Datos personales</legend>
+
+            <strong>Provincia</strong>
+
+            <select id="provincia" name="provincia">
+                <option value='alava'>Álava</option>
+                <option value='albacete'>Albacete</option>
+                <option value='alicante'>Alicante/Alacant</option>
+                <option value='almeria'>Almería</option>
+                <option value='asturias'>Asturias</option>
+                <option value='avila'>Ávila</option>
+                <option value='badajoz'>Badajoz</option>
+                <option value='barcelona'>Barcelona</option>
+                <option value='burgos'>Burgos</option>
+                <option value='caceres'>Cáceres</option>
+                <option value='cadiz'>Cádiz</option>
+                <option value='cantabria'>Cantabria</option>
+                <option value='castellon'>Castellón/Castelló</option>
+                <option value='ceuta'>Ceuta</option>
+                <option value='ciudadreal'>Ciudad Real</option>
+                <option value='cordoba'>Córdoba</option>
+                <option value='cuenca'>Cuenca</option>
+                <option value='girona'>Girona</option>
+                <option value='laspalmas'>Las Palmas</option>
+                <option value='granada'>Granada</option>
+                <option value='guadalajara'>Guadalajara</option>
+                <option value='guipuzcoa'>Guipúzcoa</option>
+                <option value='huelva'>Huelva</option>
+                <option value='huesca'>Huesca</option>
+                <option value='illesbalears'>Illes Balears</option>
+                <option value='jaen'>Jaén</option>
+                <option value='acoruña'>A Coruña</option>
+                <option value='larioja'>La Rioja</option>
+                <option value='leon'>León</option>
+                <option value='lleida'>Lleida</option>
+                <option value='lugo'>Lugo</option>
+                <option value='madrid'>Madrid</option>
+                <option value='malaga'>Málaga</option>
+                <option value='melilla'>Melilla</option>
+                <option value='murcia'>Murcia</option>
+                <option value='navarra'>Navarra</option>
+                <option value='ourense'>Ourense</option>
+                <option value='palencia'>Palencia</option>
+                <option value='pontevedra'>Pontevedra</option>
+                <option value='salamanca'>Salamanca</option>
+                <option value='segovia'>Segovia</option>
+                <option value='sevilla'>Sevilla</option>
+                <option value='soria'>Soria</option>
+                <option value='tarragona'>Tarragona</option>
+                <option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+                <option value='teruel'>Teruel</option>
+                <option value='toledo'>Toledo</option>
+                <option value='valencia'>Valencia/Valéncia</option>
+                <option value='valladolid'>Valladolid</option>
+                <option value='vizcaya'>Vizcaya</option>
+                <option value='zamora'>Zamora</option>
+                <option value='zaragoza'>Zaragoza</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+
+            <strong>Fecha de nacimiento</strong>
+            <br>
+
+            <select id="dia" name="dia">
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+            </select>
+
+            <strong>de</strong>
+
+            <select id="mes" name="mes">
+                <option value='Enero'>Enero</option>
+                <option value='Febrero'>Febrero</option>
+                <option value='Marzo'>Marzo</option>
+                <option value='Abril'>Abril</option>
+                <option value='Mayo'>Mayo</option>
+                <option value='Junio'>Junio</option>
+            </select>
+
+            <strong>de</strong>
+
+            <select id="year" name="year">
+                <option value='2004'>2004</option>
+                <option value='2005'>2005</option>
+                <option value='2006'>2006</option>
+                <option value='2007'>2007</option>
+                <option value='2008'>2008</option>
+                <option value='2009'>2009</option>
+            </select>
+
+
+            <br>
+            <br>
+
+
+            <strong>Temas de interés</strong>
+
+            <select>
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+
+            </select>
+
+
+        </fieldset>
+
+    </form>
+
+
+    <br>
+
+    <br>
+
+
+
+
+
+
+    <div class="text-center">
+
+        <a href="../index.html"> Volver al inicio</a>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

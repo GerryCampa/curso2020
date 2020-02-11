@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>ARRAYS MÚLTIPLES. NOMBRE, EDAD, ALTURA DE ALUMNOS. MEDIAS. MÁXIMOS, MÍNIMOS.</h6>
+
+
+    <script>
+        var nombre = new Array(3);
+        var edad = new Array(3);
+        var altura = new Array(3);
+
+
+        //----------FUNCIONES-----------------------
+
+        //funcion media
+
+        function mediaVector(comomedelagana) {
+            var resultado = 0;
+            var media;
+            for (var i = 0; i < comomedelagana.length; i++) {
+                resultado = resultado + comomedelagana[i];
+            }
+            media = resultado / comomedelagana.length;
+            return media;
+        }
+
+
+
+        //funcion nombreMayoror
+
+        function nombreMayorr(vectorNombre, vectorNumerico) {
+
+            for (var i = 0; i < vectorNumerico.length; i++) {
+
+                if (vectorNumerico[i] > mayor) {
+
+                    mayor = vectorNumerico[i];
+                    posicionMenor = i;
+                }
+            }
+            var mayor = 0;
+            var posicionMayor;
+            menor = vectorNumerico[0]
+        }
+
+
+        //funcion nombreMenor
+
+        function nombreMenor(vectorNombre, vectorNumerico) {
+
+            for (var i = 0; i < vectorNumerico.length; i++) {
+
+                if (vectorNumerico[i] < menor) {
+
+                    menor = vectorNumerico[i];
+                    posicionMenor = i;
+                }
+            }
+            var menor = 0;
+            var posicionMenor;
+            menor = vectorNumerico[0];
+            return (nombre[posicionMenor]);
+        }
+
+
+        //----------------ENTRADA DATOS--------------------
+
+        //introducir valores en el array nombre
+
+        for (i = 0; i < nombre.length; i++) {
+
+
+            nombre[i] = prompt("Introduzca nombre del alumno " + (i + 1))
+        }
+
+
+        //introducir valores en el array edad
+
+        for (i = 0; i < edad.length; i++) {
+
+
+            edad[i] = parseInt(prompt("Introduzca la edad del alumno  " + nombre[i] + "."));
+        }
+
+        //introducir valores en el array altura
+
+        for (i = 0; i < altura.length; i++) {
+
+
+            altura[i] = parseFloat(prompt("Introduzca la altura del alumno  " + nombre[i] + "."));
+        }
+
+
+        //--------------------IMPRESION DATOS--------------------------
+
+        //imprimir datos alumnos
+
+        for (i = 0; i < altura.length; i++) {
+
+
+            document.write("El alumno " + nombre[i] + " tiene " + edad[i] + " años y mide " + altura[i] +
+                " centímetros de altura." + "</br>" + "</br>");
+
+        }
+
+        //imprimir edad media
+
+        document.write("La edad media de los alumnos es " + Math.round(mediaVector(edad) * 10) / 10 + "</br>" +
+            "</br>");
+
+        //imprimir altura media
+
+        document.write("La altura media de los alumnos es " + Math.round(mediaVector(altura) * 10) / 10 + "</br>" +
+            "</br>");
+
+
+        //imprimir edad maxima
+
+        document.write("La edad más alta de los alumnos es " + Math.max(...edad) + "</br>");
+
+
+
+
+//---------------------------------------------------------------
+        //OTRA MANERA DE IMPRIMIR EDAD MAXIMA
+
+        function mayorVector(vector) {
+            var max;
+            max = vector[0];
+
+            for (var i = 0; i < vector.length; i++) {
+                if (vector[i] >= max) {
+                    max = vector[i];
+                }
+
+            }
+            return max;
+        }
+
+        document.write("La edad máxima de los alumnos es " + mayorVector(edad) + "</br>" +
+            "</br>");
+
+//-----------------------------------------------------------------------
+       
+       
+        //imprimir edad minima
+
+        document.write("La edad más baja de los alumnos es " + Math.min(...edad) + "</br>");
+
+
+
+
+//----------------------------------------------------------
+        //OTRA MANERA DE IMPRIMIR EDAD MINIMA. Funcion menorVector
+
+        function menorVector(vector) {
+            var min;
+            min = vector[0];
+
+            for (var i = 0; i < vector.length; i++) {
+                if (vector[i] <= min) {
+                    min = vector[i];
+                }
+
+            }
+            return min;
+        }
+
+        document.write("La edad baja de los alumnos es " + menorVector(edad) + "</br>" +
+            "</br>");
+//-----------------------------------------------------------------
+     
+     
+     
+     
+     
+        //imprimir altura maxima
+
+        document.write("La altura más alta de los alumnos es " + Math.max(...altura) + "</br>");
+
+        //imprimir altura minima
+
+        document.write("La altura más baja de los alumnos es " + Math.min(...altura) + "</br>");
+
+
+
+        //imprimir el alumno mas joven
+
+
+        document.write("El alumno más joven es " + nombreMenor(edad,nombre) + "</br>");
+
+
+        //imprimir el alumno mas mayor
+    </script>
+
+
+
+</body>
+
+</html>

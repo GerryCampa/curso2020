@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>ARRAYS. ARTICULOS Y PRECIOS</h6>
+
+
+    <script>
+        var precios = new Array(5);
+        var totales = 0;
+        var contador = 0;
+
+
+        //introducir valores en el array
+
+        for (i = 0; i < precios.length; i++) {
+
+
+            precios[i] = parseFloat(prompt("Introduzca precio " + (i + 1)));
+        }
+
+        //incrementar en un euro los precios
+
+        for (i = 0; i < precios.length; i++) {
+
+            precios[i] = precios[i] + 1;
+        }
+
+
+        //mostrar nuevos precios
+
+        for (i = 0; i < precios.length; i++) {
+
+            document.write("El precio del producto " + (i + 1) + " es " + precios[i] + "</br>")
+
+
+        }
+
+
+        //artículos que cuestan mas de 50
+
+        for (i = 0; i < precios.length; i++) {
+
+            if (precios[i] >= 50) {
+
+                contador++;
+
+
+                document.write("</br>" + "El producto " + (i + 1) + " vale más de 50. " + "</br>")
+
+            }
+
+
+
+        }
+
+        document.write("</br>" + "Hay " + contador + " artículos con precio superior a 50" + "</br>")
+
+
+
+        //incrementar precios inferiors a 10 en 5%. mostrar nuevos precios.
+
+
+        for (i = 0; i < precios.length; i++) {
+
+            if (precios[i] <= 10) {
+
+                precios [i]=precios[i]*1.05;
+
+
+                document.write("</br>" + "Los artículos de menos de 10, sufren un incremento del 5%. El nuevo precio del producto " + (i + 1) + " es. " + precios[i]+ "</br>")
+
+            }
+
+
+
+        }
+
+
+
+
+
+        //sumar todos los precios
+
+        for (i = 0; i < precios.length; i++) {
+
+            totales = totales + precios[i];
+
+
+
+        }
+
+        document.write("</br>" + "El precio de todos los productos es " + totales + "</br>")
+    </script>
+
+
+
+</body>
+
+</html>

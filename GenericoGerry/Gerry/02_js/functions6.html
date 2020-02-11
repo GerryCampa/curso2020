@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>FUNCIONES. CONVERSION GRAMOS A OTRAS UNIDADES</h6>
+
+
+    <script>
+        function convertidor(resultado, opcion) {
+           
+                if (opcion == 1) {
+
+                    resultado = (resultado * 1000);
+
+                } else if (opcion == 2) {
+
+                    resultado = (resultado * 100);
+                } else if (opcion == 3) {
+
+                    resultado = (resultado * 10);
+                } else if (opcion == 4) {
+
+                    resultado = (resultado / 10);
+                } else if (opcion == 5) {
+
+                    resultado = (resultado / 100);
+                } else if (opcion == 6) {
+
+                    resultado = (resultado / 1000);
+                } else {
+
+                    (opcion == "7")
+
+                }
+
+
+                return resultado;
+
+             
+
+        }
+
+
+
+
+
+
+        var num;
+        var opc;
+
+        num = parseInt(prompt("Introduzca cantidad en gramos"));
+        opc = parseInt(prompt("Introduzca" + "\n" + "1 para mg" + "\n" + "2 para cg" + "\n" + "3 para dg" + "\n" +
+            "4 para Dg" + "\n" + "5 para Hg" + "\n" + "6 para kg" + "\n" + "7 para finalizar" + "\n"));
+
+        if (opc == 7) {
+
+            document.write("Cálculos finalizados");
+
+
+
+        } else {
+            document.write(convertidor(num, opc));
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

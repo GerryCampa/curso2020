@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. SWITCH E IF. SUMAR, RESTAR, MULTIPLICAR, DIVIDIR, ELEVAR AL CUADRADOVOCALES</h6>
+
+
+    <script>
+        var num1, num2, operador, resultado;
+
+
+        num1 = prompt("Indica primer número");
+        num1 = parseFloat(num1);
+
+        num2 = prompt("Indica segundo número");
+        num2 = parseFloat(num2);
+
+        operador = prompt("Indica la operación (+, -, *, /, ^2)");
+
+
+        switch (operador) {
+
+
+            case "+":
+                resultado = num1 + " más " + num2 + " es igual a " + (num1 + num2) + ".";
+                document.write(resultado);
+
+                break;
+
+            case "*":
+                resultado = num1 + " por " + num2 + " es igual a " + (num1 * num2) + ".";
+                document.write(resultado);
+                break;
+
+
+            case "-":
+
+                if (num1 > num2) {
+
+                    resultado = num1 + " menos " + num2 + " es igual a " + (num1 - num2) + ".";
+                    document.write(resultado);
+                } else {
+
+                    resultado = num2 + " menos " + num1 + " es igual a " + (num2 - num1) + ".";
+                    document.write(resultado);
+                }
+
+                break;
+
+
+            case "/":
+
+                if (num1 > num2) {
+
+                    resultado = num1 + " dividido por " + num2 + " es igual a " + (num1 / num2) + ".";
+                    document.write(resultado);
+                } else {
+
+                    resultado = num2 + " dividido por " + num1 + " es igual a " + (num2 / num1) + ".";
+                    document.write(resultado);
+                }
+
+                break;
+
+
+            case "^2":
+
+                if (num1 > num2) {
+
+                    resultado = num1 + " elevado al cuadrado es igual a " + (num1 * num1) + ".";
+                    document.write(resultado);
+                } else {
+
+                    resultado = num2 + " elevado al cuadrado es igual a " + (num2 * num2) + ".";
+                    document.write(resultado);
+                }
+
+                break;
+
+
+            default:
+                document.write("No sé de qué me hablas")
+
+
+
+
+        }
+
+
+
+
+        document.write("</br>" + "Fin de programa")
+    </script>
+
+
+
+</body>
+
+</html>

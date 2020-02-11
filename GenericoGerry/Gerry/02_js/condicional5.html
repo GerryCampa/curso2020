@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. SUELDO DE UN EMPLEADO</h6>
+    <script>
+        var tiempo, sal;
+
+        tiempo = prompt("¿Cuántos años lleva empleado?");
+        tiempo = parseFloat(tiempo);
+
+        sal = prompt("¿Cuál era su salario inicial?");
+        sal = parseFloat(sal);
+
+
+        if (tiempo >= 10) {
+
+            sal = sal * 1.1;
+
+            document.write("El salario con más de 10 años es " + sal + "<br/>");
+
+        } else if (tiempo < 10 && tiempo > 5) {
+
+            sal = sal * 1.07;
+
+            document.write("El salario entre 10 y 5 años es " + sal + "<br/>");
+
+        } else if (tiempo < 5 && tiempo > 3) {
+
+            sal = sal * 1.05;
+
+            document.write("El salario entre 5 y 3 años es " + sal + "<br/>");
+
+        } else {
+
+            sal = sal * 1.03;
+
+            document.write("El salario con menos de 3 años es " + sal + "<br/>");
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

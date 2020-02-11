@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>ARRAYS. TEMPERATURAS MAXIMAS, MINIMAS, MEDIA</h6>
+
+
+    <script>
+        var temperaturas = new Array(7);
+        var totales = 0;
+        var media = 0;
+        var max = 0;
+        var min = 0;
+
+
+        //introducir valores en el array
+
+        for (i = 0; i < temperaturas.length; i++) {
+
+
+            temperaturas[i] = parseFloat(prompt("Introduzca temperatura máxima del día " + (i + 1) + " de la semana"));
+        }
+
+        //Mostrar las temperaturas
+
+        document.write("El lunes la temperatura máxima fue: " + temperaturas[0] + "</br>");
+
+        document.write("El martes la temperatura máxima fue: " + temperaturas[1] + "</br>");
+
+        document.write("El miércoles la temperatura máxima fue: " + temperaturas[2] + "</br>");
+
+        document.write("El jueves la temperatura máxima fue: " + temperaturas[3] + "</br>");
+
+        document.write("El viernes la temperatura máxima fue: " + temperaturas[4] + "</br>");
+
+        document.write("El sábado la temperatura máxima fue: " + temperaturas[5] + "</br>");
+
+        document.write("El domingo la temperatura máxima fue: " + temperaturas[6] + "</br>");
+
+
+
+
+        //calcular media de temperaturas
+
+        for (i = 0; i < temperaturas.length; i++) {
+
+            totales = totales + temperaturas[i];
+            media = (totales / 7);
+        }
+
+        document.write("</br>" + "El temperatura media fue: " + Math.round(media * 10) / 10 + "</br>")
+
+
+        //mostrar temperatura más alta
+
+
+        document.write("</br>" + "La temperatura más alta fue: " + Math.max(...temperaturas));
+
+
+
+
+
+        //otra manera de calcular la temperatura mas alta
+
+
+        for (i = 0; i < temperaturas.length; i++) {
+
+            if (temperaturas[i] > max) {
+
+                max=temperaturas[i];
+            } 
+        }
+
+        document.write("</br>" + "La temperatura más alta fue: " + max);
+
+
+
+
+
+
+        //mostrar temperatura mas baja
+
+        document.write("</br>" + "La temperatura más baja fue: " + Math.min(...temperaturas));
+    </script>
+
+
+
+</body>
+
+</html>

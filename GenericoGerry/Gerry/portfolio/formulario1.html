@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Favicon link -->
+
+    <link rel="icon" type="image/x-icon"
+        href="http://icons.iconarchive.com/icons/yellowicon/game-stars/128/Mario-icon.png">
+
+
+</head>
+
+
+<body
+    style="background: var(--gray-100); width: 800px; margin: 60px auto; box-shadow: 2px 6px 4px rgba(0,0,0,.2),-2px -6px 8px rgba(0,0,0,.1); border-radius:4px; padding: 60px; font-family: 'Open Sans', sans-serif; border-bottom:var(--gray-400) solid 15px;">
+
+
+    <div class="text-center">
+
+        <h1 style="text-align:center;">Ejercicio FORMULARIOS</h1>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <form action="/php/insertarcv.php" method="post" enctype="multipart/form-data">
+
+
+
+        <h4><strong>Rellena tu CV</strong></h4>
+        
+
+        <strong>Nombre</strong>
+        <br>
+        <input type="text" id="nombre" name="nombre" value="" size="31" maxlength="30">
+        <br>
+        <br>
+
+
+        <strong>Apellidos</strong>
+        <br>
+        <input type="text" id="apellidos" name="apellidos" value="" size="81" maxlength="80">
+        <br>
+        <br>
+
+
+        <strong>Contraseña</strong>
+        <br>
+        <input type="password" id="contrasena" name="contrasena" value="" size="11" maxlength="10">
+        <br>
+        <br>
+
+        <strong>DNI</strong>
+        <input type="text"  id="dni" name="dni" value="" size="10" maxlength="9" name="nif">
+            
+
+        <br>
+        <br>
+
+
+        <strong>Sexo</strong>
+        <br>
+        <input type="radio" name="sexo" value="mombre"> Hombre<br>
+        <input type="radio" name="sexo" value="mujer"> Mujer<br>
+
+        <br>
+        <br>
+
+        <strong>Incluir foto</strong>
+        <input type="file" name="enviar" src="accept.png" size="30">
+
+        <br>
+        <br>
+
+
+
+
+        <input type="checkbox">
+        <strong>Suscribir a buletín</strong>
+
+        <br>
+        <br>
+
+
+
+
+
+
+        <div class="botonera">
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Borrar todo">
+        </div>
+
+
+
+
+
+
+
+    </form>
+
+
+<br>
+
+
+
+
+
+    <div class="text-center">
+
+        <a href="../index.html"> Volver al inicio</a>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

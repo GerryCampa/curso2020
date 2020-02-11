@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If else</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Condicionales</h1>
+<script>
+var precio, seccion;
+            
+precio = parseInt(prompt("Introduzca el precio de su producto"));
+
+categoria = prompt("¿Pertenece a la sección de electrónica? si o no");
+
+if (precio>100 && categoria=="si") {
+                precio=precio+(precio*0.2);
+             
+            }
+else  {
+    precio=precio+(precio*0.15);
+
+}
+document.write("El precio total es: " +precio);
+</script>
+    </div>
+</body>
+
+</html>

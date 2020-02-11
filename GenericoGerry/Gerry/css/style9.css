@@ -1,0 +1,46 @@
+@keyframes myfirst{
+
+    0% {background:red;} 
+    25% {background:yellow;}
+    0% {background:blue;}
+    0% {background:green;}
+
+
+}
+
+
+/*animacion caja 2*/
+div.caja1{
+
+    animation: myfirst 5s;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height:100px;
+    transition: all 1s ease;
+    float: left;
+}
+
+
+div.caja1:hover{
+
+    transform: rotate(720deg) scale(2,2);
+}
+
+/*animacion caja 2*/
+
+div.caja2{
+
+    animation: myfirst 3s;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height:100px;
+    transition: all 2s ease-in-out;
+    margin-left: 150px;
+    
+}
+
+
+div.caja2:hover{
+
+    transform: rotate(720deg) scale(1.5,1.5);
+}

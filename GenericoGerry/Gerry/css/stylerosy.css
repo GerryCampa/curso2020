@@ -1,0 +1,283 @@
+* {
+    margin: 10px auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(71, 70, 70, 0.863);
+}
+
+img.alinear{
+    vertical-align: middle;
+    /* Ojo vertical-align: text-middle no existe*/
+  }
+#contenedor {
+    background: rgba(128, 128, 128, 0.705);
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 900px;
+}
+
+#formulario {
+    border-radius: 20px;
+    background: white;
+    padding: 20px;
+}
+
+/*Alineamiento de los label e input*/
+#caja1 {
+    width: 100%;
+}
+
+#izquierda {
+    width: 16%;
+    margin: 0px 100px;
+    float: left;
+    padding: 0px 5px;
+}
+
+#correo {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+
+#contrase {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+#derecha {
+    width: 16%;
+    margin: 0px 100px;
+    float: left;
+    padding: 0px 5px;
+    right: 119px;
+}
+
+#repem {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+
+#repco {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+#rep {
+    position: absolute;
+    right: 129px;
+    top: 5px;
+    width: 100px;
+}
+
+#repetir {
+    float: left;
+}
+
+#reco {
+    position: absolute;
+    right: 129px;
+    top: 5px;
+    width: 140px;
+}
+
+.titulo {
+    position: absolute;
+    right: 129px;
+    top: 5px;
+}
+
+.rellenar {
+    float: left;
+}
+
+.titulos {
+    position: absolute;
+    right: 189px;
+}
+
+#caja3 {
+    width: 55%;
+    margin-right: 10px;
+}
+
+#genero {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+#nacimiento {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+#nacionalidad {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+#hijos {
+    position: relative;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+.especial {
+    position: absolute;
+    right: 229px;
+    width: 150px;
+    text-align: right;
+}
+
+.especiales {
+    float: left;
+}
+
+
+#caja2 {
+    width: 45%;
+}
+
+#name {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+#tel {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+#calle {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+#adress {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+#web {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+/*fin alineamiento campos label e input*/
+#obligar {
+    width: 100px;
+    float: right;
+    margin-top: 60px;
+    margin-right:  50px;
+}
+
+strong {
+    font-size: 10px;
+    font-style: italic;
+}
+
+#contenido {
+    width: 100%;
+}
+
+#personales {
+    float: left;
+    width: 50%;
+    border: 1px solid rgba(61, 61, 61, 0.274);
+    text-align: left;
+    border-bottom: 0px;
+    padding: 10px;
+    border-left: 0px;
+
+}
+
+#registro {
+    padding: 10px;
+    border: 1px solid rgba(61, 61, 61, 0.274);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+
+legend {
+    text-align: left;
+    color: rgb(146, 250, 146);
+    overflow: hidden;
+    margin: 0;
+}
+
+#otros {
+    height: 50%;
+    float: left;
+    width: 50%;
+    border: 1px solid rgba(61, 61, 61, 0.274);
+    border-bottom: 0px;
+    padding: 10px;
+    border-right: 0px;
+}
+
+#texto {
+    padding: 10px;
+    background: linear-gradient(rgb(191, 252, 191), white);
+    border: 1px solid rgb(191, 252, 191);
+}
+
+h4 {
+    color: rgb(115, 253, 115);
+}
+
+#term {
+    float: left;
+    width: 70%;
+}
+
+#terminos {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid rgba(61, 61, 61, 0.274);
+    border-bottom: 0px;
+    border-left: 0px;
+    margin: 5px;
+}
+
+
+#boton {
+    float: right;
+    width: 10%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+#vacio {
+    clear: both;
+}
+
+#btn {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(34, 180, 34);
+    border-radius: 5px;
+
+}

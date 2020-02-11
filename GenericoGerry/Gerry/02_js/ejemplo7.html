@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CALCULAR EL TOTAL DE UN DEPÓSITO, SEGÚN EL CAPITAL Y EL TIPO DE INTERÉS</h6>
+
+
+    <script>
+        var capital, interes;
+        var totaldeposito;
+
+
+       
+
+        //capial-------------------------------
+
+
+        capital = prompt("Escribe el valor de tu capital");
+        capital=parseInt(capital);
+
+
+        //interés-------------------------------
+
+
+        interes = parseInt(prompt("Escribe el valor del interés en %"));
+
+
+         //totaldepósito-------------------------------
+
+       totaldeposito = capital * interes/100 +capital
+
+
+        document.write("El total depósito del capital " + capital + " e " + " interés " + interes + "% "+  " es " + totaldeposito +
+            "<br/>");
+
+
+        
+    </script>
+
+
+
+</body>
+
+</html>

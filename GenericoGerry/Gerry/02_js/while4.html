@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. BUCLE WHILE. SUMA X NUMEROS NATURALES</h6>
+
+
+    <script>
+        var numMax;
+        var numMin;
+        var i=1;
+        var sum=0;
+
+
+
+        numMax = prompt("Indica número máximo");
+        numMax = parseInt(numMax);
+        
+        numMin = prompt("Indica número mínimo");
+        numMin = parseInt(numMin);
+       
+
+
+        while ((i <= numMax) && (i >=numMin)) {
+
+
+            sum=sum+i;
+            i++;
+
+        
+        }
+        document.write("La suma de los múmeros entre " + numMax + " y "+numMin+" (inclusive) es: " +sum+ "</br>" + "</br>");
+
+
+
+        document.write("</br>" + "Fin de programa")
+    </script>
+
+
+
+</body>
+
+</html>

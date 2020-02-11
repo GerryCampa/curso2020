@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Métodos de la Clase Array</title>
+</head>
+
+<body>
+<h3>Métodos de la Clase Array</h3>
+<hr><br/>
+<script language="javascript" type="text/javascript">
+
+
+
+var semana = new Array ("lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo");
+
+
+// Convertir a cadena de texto y mostrar los datos 
+
+document.write(semana.join(" - ")+"</br>");
+
+
+// Invertir el orden y mostrarlo
+
+semana.reverse();
+
+document.write(semana.join(" - "));
+
+semana.reverse();
+
+
+
+//Pedir dos números del 1 al 7 y devuelve los días ENTRE esos números(2-6)-----DEBE CORREGIRSE ESTO CON UN SPLICE
+
+var numSem1;
+var numSem2;
+
+numSem1=parseInt(prompt("Introduzca el número de un día de la semana (1-7). "));
+
+numSem2=parseInt(prompt("Introduzca otro número de un día de la semana (1-7)."));
+
+document.write("</br>"+"</br>"+"El primer día escogido es: "+semana[(numSem1-1)]+"</br>");
+
+document.write("El segundo día escogido es: "+semana[(numSem2+-1)]+"</br>"+"</br>");
+
+
+//Elimiar el primer elemento
+
+semana.reverse();
+semana.pop();
+semana.reverse();
+
+document.write("La semana sin lunes queda así: "+semana.join(" - ")+"</br>");
+
+
+
+
+//Ordenar alfabeticamente decendentemente y mostrar resultado
+
+
+
+
+//Ordenarlo alfebiticamente ascendente y ordenarlo
+
+//meter los datos del fin de semana en un array y mostrarlo
+
+
+//añadir entre el jueves y el viernes el dia JUERNES
+
+
+
+//PASAR EL LUNES AL FINAL Y EL DOMINGO AL PRINCIPIO
+
+
+//QUITAR EL SEGUNDO ELEMENTO DEL ARRAY
+
+
+
+</script>
+
+
+
+</body>
+</html>	 

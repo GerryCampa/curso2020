@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>FUNCIONES. MEDIA, SUMA, CONTEO, MOSTRAR, NÚMS DEL 100 AL 0, DE 7 EN 7</h6>
+
+
+    <script>
+
+        
+        function mostrarNums() {
+            
+
+            for (var i = 100; i >= 0; i = i - 7) {
+                document.write(i + " ");
+
+
+            }
+
+        }
+
+
+
+        function contarNums() {
+
+            var contador = 0;
+            for (var i = 100; i >= 0; i = i - 7) {
+                contador++;
+
+
+            }
+            return contador;
+
+        }
+
+
+
+        function avgNums() {
+
+            var contador = 0;
+            var suma = 0;
+            var media;
+
+            for (var i = 100; i >= 0; i = i - 7) {
+                contador++;
+                suma = suma + i;
+
+
+
+            }
+
+            media = suma / contador;
+            return media;
+
+
+
+
+        }
+
+        document.write("El total de números es: "+contarNums()+ ". La media del tol rollu es: "+avgNums());
+    </script>
+
+
+
+</body>
+
+</html>

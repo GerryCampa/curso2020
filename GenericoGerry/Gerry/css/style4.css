@@ -1,0 +1,100 @@
+/*======================================================*/
+
+
+
+
+.container {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #c8c8fc;
+
+}
+
+/*======================================================*/
+
+.imgfixed {
+
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #e20d0d;
+    margin-top: 30px;
+
+}
+
+.fixed{
+
+    height: 92px;
+    width: 92px;
+}
+
+/*======================================================*/
+
+
+.imgabsolute {
+
+  
+    border-style: solid;
+    border-width: 4px;
+    border-color: #0b3fec;
+    height: 250px;
+    width: 100%;
+
+ 
+}
+
+.absolute{
+
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+/*======================================================*/
+
+
+.floats {
+
+    height: 200px;
+    width: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #0b3fec;
+  
+    
+   
+}
+
+.imga{
+
+    height: 100px;
+    width:100px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.imgb{
+    
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.imgc{
+    
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+

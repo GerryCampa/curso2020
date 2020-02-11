@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. BUCLE FOR. INTRODUCIR 10 NUMS, DEVOLVER MEDIA DE POS, DE NEG Y Nº DE 0S</h6>
+
+
+    <script>
+        var numNums;
+        var numero;
+        var pos = 0;
+        var neg = 0;
+        var ceros = 0;
+        var sumapos = 0;
+        var sumaneg = 0;
+
+
+
+
+
+        numNums = prompt("Indica número máximo de números");
+        numNums = parseInt(numNums);
+
+
+
+
+        for (var i = 1; i <= numNums; i++) {
+
+            numero = prompt("Numero?");
+            numero = parseInt(numero);
+
+            if (numero > 0) {
+                pos++;
+                sumapos = sumapos + numero;
+
+            } else if (numero < 0) {
+
+                neg++;
+
+                sumaneg = sumaneg + numero;
+            }
+
+            else{
+
+                ceros++;
+            }
+
+
+
+
+
+        }
+        document.write("Hemos introducido " + pos + " positivos, " + " y " + neg + " negativos" +". El número de ceros es: "+ceros+
+            "</br>" + "</br>");
+
+        document.write("La media de los positivos es " + (sumapos / pos) + " y la media de los negativos es  " + (
+                sumaneg / neg) + 
+            "</br>" + "</br>");
+    </script>
+
+
+
+</body>
+
+</html>

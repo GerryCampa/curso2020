@@ -1,0 +1,15 @@
+#divloco{
+
+    height:100px;
+    width:100px;
+    border: 1px solid #f00;
+    margin 10px auto;
+    background: #ccc;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+
+#divloco:hover{
+
+    transform: rotate(720deg) scale(2,2);
+}

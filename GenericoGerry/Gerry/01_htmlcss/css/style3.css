@@ -1,0 +1,71 @@
+/*primera lista==========================================================*/
+
+.blue {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #c7c7fd;
+    background-color: #e9e7ff;
+    color:#787d8d;
+    font-weight: bold;
+}
+
+.dia1 {
+    color: white;
+    background-color: #c9cafb;
+}
+
+.romana {
+    list-style-type: upper-roman;
+}
+
+.circles {
+    list-style-type: circle;
+}
+
+
+
+/*segunda lista=========================================================*/
+
+.green {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #c3eebd;
+    background-color:#ceffcf;
+}
+
+.dia2 {
+    color: white;
+    background-color: #ade193;
+}
+
+.alpha {
+    list-style-type: lower-greek;
+
+
+}
+
+
+/*tercera lista===========================================================*/
+
+.purple {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #c8c8fc;
+    background-color: #e9e7ff;
+    color: #9f9cad;
+    font-weight: bold;
+}
+
+.dia3 {
+    color: white;
+    background-color: #cacafe;
+}
+
+.imgs {
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif")
+}
+
+;
+
+
+}

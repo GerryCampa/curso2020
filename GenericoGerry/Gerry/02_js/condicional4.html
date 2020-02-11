@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. MEDIA PARA BECA>8. TRES NOTAS. AL MENOS UN 10</h6>
+    <script>
+        var not1, not2, not3, media
+
+        not1 = prompt("NOTA EXAMEN 1");
+        not1 = parseFloat(not1);
+
+        not2 = prompt("NOTA EXAMEN 2");
+        not2 = parseFloat(not2);
+
+        not3 = prompt("NOTA EXAMEN 3");
+        not3 = parseFloat(not3);
+
+        media = (not1 + not2 + not3) / 3;
+
+        
+        if (media > 8 && (not1 == 10) | not2 == 10 | not3 == 10) {
+            document.write("El alumno tiene de media " + media + " Recibe beca" + "<br />");
+
+        }
+
+
+
+        else {
+
+            document.write("El alumno no recibe beca" + "<br />");
+
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

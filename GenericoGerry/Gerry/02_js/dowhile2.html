@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>operaciones</title>
+</head>
+
+<body>
+
+    <h2>HACIENDO PRUEBAS CON JAVASCRIPT</h2>
+
+    <h6>CONDICIONALES. BUCLE DO WHILE. ADIVINAR UN NÚMERO</h6>
+
+
+    <script>
+        var numAdiv = 0;
+        var valor;
+        var contador = 0;
+        numAdiv=Math.floor(Math.random()*10+1);
+
+      
+
+        do {
+
+            valor = prompt("Ingrese un valor");
+            valor = parseInt(valor)
+            contador++;
+
+            if (valor > numAdiv) {
+
+                alert("El valor introducido es demasiado alto.");
+
+
+            } else if (valor < numAdiv) {
+
+
+                alert("El valor introducido es demasiado bajo.");
+
+
+            }
+
+            else {alert("Has acertado");
+            
+            }
+        }
+
+        
+
+        while (valor != numAdiv);
+
+
+
+        document.write("Has acertado tras " + contador + " intentos.");
+        
+        
+
+
+        
+
+
+        document.write("</br>" + "</br>" + "Fin de programa")
+    </script>
+
+
+
+</body>
+
+</html>

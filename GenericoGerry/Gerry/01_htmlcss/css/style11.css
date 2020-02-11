@@ -1,0 +1,49 @@
+img{
+
+    width: 30px;
+    height:30px;
+    float: left;
+
+
+}
+
+
+
+h3{
+
+    color:#5858ca;
+    font-weight: bolder;
+
+    
+}
+
+h5{
+
+    color:#8f8ff8;
+    background-color: rgb(238, 240, 247);
+
+
+}
+
+h6{
+
+    color:rgb(107, 230, 107);
+
+
+}
+
+p{
+
+    color:#d6d6f7;
+    font-weight: bolder;
+
+
+
+}
+
+
+.helpful{
+
+    border:1px solid #d6d6f7;
+}
+

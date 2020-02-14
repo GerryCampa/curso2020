@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio 14 - DOM basico y atributos XHTML</title>
+
+
+</head>
+
+
+
+<body>
+<h3 class="beginning">Some languages</h3> 
+<div id="content"> 
+<ul id="languages"> 
+<li id="cpp">C++</li> 
+<li id="java">Java</li> 
+<li id="csharp">C#</li> 
+<li id="php">PHP</li> 
+</ul> 
+</div>
+<script type="text/javascript">
+
+
+
+//crear texto para un nuevo elemento "javascript"
+
+var nuevoTexto=document.createTextNode("JAVASCRIPT"); //crea un texto de tipo nodo. Su parámentro es el texto "JAVASCRIPT"
+
+var nuevoElemento=document.createElement("li");//esto proporciona el tipo de nodo, en este caso "li" de lista.
+
+nuevoElemento.appendChild(nuevoTexto);//esto adjunta al "li", su texto.
+
+var nodoUl=document.getElementById("languages");//esto engancha al ul por su id
+
+nodoUl.appendChild(nuevoElemento)// esto adjunta al ul enganchado, el nuevo hijo llamado nuevoElemento
+
+
+</script>
+
+</body>
+</html>

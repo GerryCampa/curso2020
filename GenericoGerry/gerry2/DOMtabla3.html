@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Parrafo </title>
+</head>
+
+<body>
+
+    <h2 id="titulo">Al pinchar el enlace, se oculta su párrafo. El enlace cambia a "mostrar párrafo". Si se pincha de
+        nuevo, lo muestra.</h2>
+
+    <style>
+
+    </style>
+
+
+    <p id="parrafo1">
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+    <a id="enlace1" href="#">Ocultar párrafo</a>
+    <br>
+
+
+    <p id="parrafo2">
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+    <a id="enlace2" href="#">Ocultar párrafo</a>
+    <br>
+
+    <p id="parrafo3">
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+    <a id="enlace3" href="#">Ocultar párrafo</a>
+    <br>
+
+
+
+    <script language="javascript" type="text/javascript">
+        //creamos funcion para ocultar primer párrafo y eliminar primer enlace
+
+
+
+        var pinchar = document.getElementById("enlace1");
+        pinchar.onclick = function () {
+
+            var parrafo = document.getElementById("parrafo1");
+
+            if (this.innerHTML == "Ocultar párrafo") {
+                this.innerHTML = "Mostrar párrafo";
+                parrafo.style.display = "none";
+            } else {
+
+                this.innerHTML = "Ocultar párrafo";
+                parrafo.style.display = "block";
+            }
+
+
+
+
+        }
+
+
+        var pinchar = document.getElementById("enlace2");
+        pinchar.onclick = function () {
+
+            var parrafo = document.getElementById("parrafo2");
+
+            if (this.innerHTML == "Ocultar párrafo") {
+                this.innerHTML = "Mostrar párrafo";
+                parrafo.style.display = "none";
+            } else {
+
+                this.innerHTML = "Ocultar párrafo";
+                parrafo.style.display = "block";
+            }
+
+
+
+
+        }
+
+
+        var pinchar = document.getElementById("enlace3");
+        pinchar.onclick = function () {
+
+            var parrafo = document.getElementById("parrafo3");
+
+            if (this.innerHTML == "Ocultar párrafo") {
+                this.innerHTML = "Mostrar párrafo";
+                parrafo.style.display = "none";
+            } else {
+
+                this.innerHTML = "Ocultar párrafo";
+                parrafo.style.display = "block";
+            }
+
+
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

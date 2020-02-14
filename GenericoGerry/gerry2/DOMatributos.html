@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> DOM Ejemplo listas </title>
+</head>
+
+<body>
+
+    <h2 id="titulo">EJEMPLO LISTAS.</h2>
+
+    <ul id="lista">
+        <li class="item">Lorem ipsuom blabla</li>
+        <li class="item">Lorem ipsuom blabla</li>
+        <li>Lorem ipsuom blabla</li>
+        <li class="item">Lorem ipsuom blabla</li>
+        <li>Lorem ipsuom blabla</li>
+
+        
+
+    </ul>
+
+    <style>
+
+
+
+    </style>
+
+
+    
+    <script language="javascript" type="text/javascript">
+        //creamos funcion para ocultar primer párrafo y eliminar primer enlace
+
+
+        var titulo=document.getElementById ("item");
+
+        titulo.onclick=function(){
+
+            var listaItems=document.getElementsByClassName("item");
+
+            for (var i=0; i<listaItems;i++){
+
+             listaItems[i].style.color = "red";
+
+
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

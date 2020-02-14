@@ -1,0 +1,85 @@
+<html>
+<head> 
+<title>Ejercicio 12, ejercicio formularios</title>
+<link rel="shortcut icon" href="www/favicons/little-penguin-16-27563.png" type="image/png" />
+
+</head> 
+<style type="text/css">
+    .oculto{
+        /*color: crimson;*/
+        display: none;
+    }
+    </style>
+    <!-- fin de css -->
+<body>
+    <form > <!--action="insertar_cv.php" method="post" enctype="multipart/form-data"> <!-- sustiruir el post `por get para ver en la barra de direcciones -->
+        <p> <strong>Rellena ficha</strong> </p>
+        
+        <label for="Nombre"><strong>Nombre</strong></label></br>
+        <input type="text" id="Nombre" name="Nombre" size="30" value="" /><br/>
+
+        <label><strong>Sexo</strong></label></br>
+        <input type="radio" name="Sexo" value="Hombre" checked="checked"/><strong>Hombre</strong><br/>
+        <input type="radio" name="Sexo" value="Mujer" /><strong>Mujer</strong>
+        <br/>
+
+        <label  for="ciudad_Region"><strong>Ciudad-Region (mantener el formato solicitado)</strong></label></br>
+        <input type="text" id="ciudad_Region" name="ciudad_Region" size="80" value="" /><br/>
+        
+    </br></br>
+        <input type="submit" onclick="datos(document.forms[0].Nombre.value, document.forms[0].ciudad_Region.value, document.forms[0].sexo.value)" id="enviar" name="enviar" value="enviar" /></br>
+        <input type="reset"  id="limpiar" name="limpiar" value="Borrar datos del formulario" />
+        
+        </form>
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+function datos(nombre,localidad,sexo){
+
+    var salario;
+    var complementosalarial
+    var ciudad;
+    var provincia;
+    var posicion;
+
+    posicion=localidad.indexOf("-",0); //empieza a buscar el guion desde la posicion 0 y asigna su posicion a la variable posicion
+    ciudad=localidad.substring(0,posicion); //muestra todos los caracteres desde 0 hasta el nuevo valor de la variable posicion
+    provincia=localidad.substring(posicion+1,localidad.length); //muestra todos los caracteres desde posicion hasta el final
+
+    if(sexo=="Hombre"){
+        salario=1000;
+    }
+
+    else{
+        salario=950;
+    }
+    if(provincia.toUpperCase()=="ASTURIAS"){
+        complementosalarial=200;
+        
+    }
+
+    else{
+        complementosalarial=300;
+        
+    }
+
+salario=salario+complementosalarial;
+   
+    
+
+
+    alert ("Mi nombre es "+nombre+ " y soy de "+ciudad+ ", provincia de "+provincia+" y mi salario es: "+salario);
+
+
+
+}
+
+</script>
+</body>
+</html>

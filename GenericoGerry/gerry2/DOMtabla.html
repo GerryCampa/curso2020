@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Tabla </title>
+</head>
+
+<body>
+
+    <h2 id="titulo">Aplicar formatos diferentes a las filas de una tabla.</h2>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        #ocultar{
+
+            font-size: 24px; color: red; display:none;
+        }
+    </style>
+
+
+
+    <h2>Bueno, pues hay que hacer una tabla</h2>
+    <p>Consectetur adipiscing elit. Etiam sollicitudin venenatis porttitor. Suspendisse ullamcorper non nisl id aliquet.
+        Vivamus semper risus facilisis aliquet iaculis. Cras imperdiet purus ut odio volutpat consequat. Praesent a
+        condimentum est. Etiam vestibulum ante in quam vestibulum sodales. Nam ac porttitor metus, non lacinia purus.
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+
+    <table style="width:50%">
+        <tr>
+            <th>F1C1</th>
+            <th>F1C2</th>
+            <th>F1C3</th>
+        </tr>
+        <tr>
+            <th>F1C1</th>
+            <th>F2C3</th>
+            <th>F1C4</th>
+        </tr>
+        <tr id="mostrar">
+            <th>F3C1</th>
+            <th>MES EXAMEN
+            <p id="ocultar">enero</p>
+
+            </th>
+            <th>F3C4</th>
+        </tr>
+        <tr>
+            <th>F4C1</th>
+            <th>F4C2</th>
+            <th>F4C3</th>
+        </tr>
+        <tr>
+            <th>F5C1</th>
+            <th>F5C3</th>
+            <th>F6C4</th>
+        </tr>
+        <tr>
+            <th>F7C1</th>
+            <th>F5C3</th>
+            <th>F7C4</th>
+        </tr>
+
+
+
+
+
+    </table>
+
+
+    <script language="javascript" type="text/javascript">
+
+    meses= new Array ("enero","febrero", "marzo", "abril", "mayo", "junio","julio","agosto","septiembre","octubre","noviembre","diciembre");
+
+    var contador= 1;
+        //CAMBIAR COLOR A TABLAS POR FILAS
+
+        var nodo = document.getElementById("titulo");
+        nodo.onclick = function () {
+
+            var tablaFilas = document.getElementsByTagName("tr");
+
+
+            for (var i = 0; i < tablaFilas.length; i++) {
+
+                if (i % 2 == 0) {
+
+
+                    tablaFilas[i].style.backgroundColor = "red";
+                } else {
+
+                    tablaFilas[i].style.backgroundColor = "blue";
+                }
+
+            }
+        }
+
+   var fila=document.getElementById("mostrar");
+
+   fila.onmouseover=function(){
+        var parrafo=document.getElementById("ocultar");
+        parrafo.style.display='block';
+
+
+   }
+
+     fila.onmouseout=function(){
+        var parrafo=document.getElementById("ocultar");
+        parrafo.style.display='none';
+        parrafo.innerHTML=meses[contador%12];
+        if(contador ==11){
+            contador=0;
+        }
+
+        else{
+            contador++;
+        }
+
+     }    
+
+    </script>
+
+
+</body>
+
+</html>

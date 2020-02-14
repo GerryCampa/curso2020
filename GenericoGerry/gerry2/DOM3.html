@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Seleccionar Nodo - Imagen de sustitución </title>
+</head>
+
+<body>
+
+    <h3>EJERCICIO PARA CAMBIAR COLORES DE ENLACES CUANDO PASA EL RATON POR ENCIMA DE LOS ENLACES Y QUE VUELVAN A LOS COLORES ORIGINALES AL IRSE EL RATON </h3>
+
+    <a href="enlace1.html">Lorem ipsum dolor sit amet</a>
+    <p>Consectetur adipiscing elit. Etiam sollicitudin venenatis porttitor. Suspendisse ullamcorper non nisl id aliquet.
+        Vivamus semper risus facilisis aliquet iaculis. Cras imperdiet purus ut odio volutpat consequat. Praesent a
+        condimentum est. Etiam vestibulum ante in quam vestibulum sodales. Nam ac porttitor metus, non lacinia purus.
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+    <a href="enlace2.html"> Phasellus vestibulum eu sem et accumsan </a>
+    <p>Aliquam nisi diam, mollis sit amet euismod fringilla, condimentum in tortor. Aenean elementum at libero eget
+        semper. Duis rutrum ante sit amet facilisis dapibus. Integer viverra, elit vel eleifend placerat, magna urna
+        pretium est, ut maximus purus libero eu nisi. Ut id posuere lacus. Suspendisse imperdiet, dui vitae fermentum
+        laoreet, diam erat semper erat, eget viverra elit enim id ipsum. Suspendisse ultrices leo a ligula auctor,
+        vehicula ultricies nisl ullamcorper. Aliquam scelerisque ullamcorper diam, vitae fringilla leo sollicitudin
+        quis. Vestibulum nec ex eu metus vestibulum finibus vitae nec sem. Ut aliquam blandit tristique. Mauris sit amet
+        ante non ante blandit fringilla.</p>
+
+    <a href="enlace3.html"> Sed orci velit, varius non neque vitae, tristique placerat sapien.</a>
+    <p>Curabitur neque risus, tincidunt non suscipit id, porttitor eget lacus. Fusce finibus eu massa quis ultrices. Nam
+        neque mauris, vestibulum eget condimentum ut, maximus at lectus. Donec mollis lobortis semper. Phasellus nec
+        felis aliquam turpis posuere mattis nec vitae ipsum. Suspendisse vel ex est. Donec vulputate ornare aliquam.
+        Phasellus condimentum nisl urna, non efficitur mauris dictum ut. Aenean venenatis mauris sem, vitae efficitur
+        nunc gravida et. Nam lobortis consequat purus sit amet congue. Vivamus vitae tortor neque. Nulla molestie, diam
+        id tempus ultrices, sem dolor rhoncus sapien, ac semper elit diam a nulla. Proin leo mauris, sollicitudin id
+        aliquet sit amet, tempor gravida lacus. Aenean sagittis venenatis vehicula.</p>
+
+
+    <script language="javascript" type="text/javascript">
+        var as = document.getElementsByTagName("a");
+
+        for (var i = 0; i < as.length; i++) {
+
+            as[i].onmouseover = function () {
+
+                this.style.color = "white";
+                this.style.backgroundColor = "green";
+            }
+
+            as[i].onmouseout = function () {
+
+                this.style.color = "blue";
+                this.style.backgroundColor = "white";
+            }
+
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

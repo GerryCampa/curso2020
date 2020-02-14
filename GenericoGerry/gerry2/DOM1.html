@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FUNCIONES con ARRAY</title>
+    <script language="javascript" type="text/javascript" src="FuncionesArray.js">
+    </script>
+
+</head>
+
+<body>
+
+
+    <h1>Objetos</h1>
+    <h3 id=intro>Introducción</h3>
+
+    <ul>
+
+        <li><a href="uno.html">El primer enlace</a></li>
+        <li class="miClase"><a href="dos.html">El primer enlace</a></li>
+        <li><a href="tres.html">El primer enlace</a></li>
+
+
+    </ul>
+
+    <script language="javascript" type="text/javascript">
+        var nodo = document.getElementsByTagName("li")[0];
+
+        //propiedades nodo
+
+        document.write("PROPIEDADES DEL NODO" + "</br>");
+        document.write("Tipo de nodo: " + nodo.nodeType + "</br>");
+
+        document.write("Nombre del nodo es: " + nodo.nodeName.toLowerCase() + "</br>");
+
+        document.write("Clase: " + nodo.className + "</br>")
+
+        document.write("Padre " + nodo.parentNodeName +
+            "</br>");
+
+        document.write("Número de hijos es: " + nodo.parentNode.childNodes.length + "</br>");
+
+        document.write("El primer hijo es: " + nodo.firstChild.nodeName + "</br>");
+
+        document.write("El último hijo es: " + nodo.lastChild.nodeName + "</br>");
+
+
+    </script>
+
+
+</body>
+
+</html>

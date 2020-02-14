@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+	<title> Creación de Nodos </title>
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>
+
+</head>
+<body>
+
+
+<form>
+Nombre:<input type="text" name="nombre">
+<br>
+<input id="prueba" type="checkbox" name="mayor_edad" value="1" id="mayoria_edad"> Soy mayor edad
+<div id="formulariomayores" style="display:none">
+Dato para mayores de edad:<input  type="text" name="mayores_edad">
+</div>
+<input type="submit" name="enviar" value="enviar" onclick="mensaje(document.forms[0].nombre.value,document.forms[0].mayores_edad.value)"/>
+</form>
+
+	<script language="javascript" type="text/javascript">
+	function mensaje(p1,p2){
+		alert("Mi nombre es "+p1+"\nAl ser mayor de edad puede acceder a "+p2);
+	
+	}
+	
+	
+//Crear una tabla con 3 columnas y 4 filas con ciudades asturianas
+//toda la tabla va a tener color azul y texto rojo
+//Cuando pincho en la primera fila, cambiamos todo el color texto a negro a toda tabla
+//cuando paso raton por segunda fila, cambiamos color fondo a 1ª y ultima fila(yellow)
+//cuando pincho en la tercera fila, cambiamos el tamaño del texto de las 2 primeras
+//celdas para que quede mas grande.
+		var nodo;
+		nodo=document.getElementById("prueba");
+	
+		nodo.onclick=function(){
+			var campo=document.getElementById("formulariomayores");
+			if(nodo.checked){
+			
+				campo.style.display='block';
+			}else{
+				campo.style.display='none';
+			}
+		}
+		
+		
+		
+
+	</script>
+
+</body>
+</html>	 

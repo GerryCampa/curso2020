@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Seleccionar Nodo - Imagen de sustitución </title>
+</head>
+
+<body>
+
+
+
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>Consectetur adipiscing elit. Etiam sollicitudin venenatis porttitor. Suspendisse ullamcorper non nisl id aliquet.
+        Vivamus semper risus facilisis aliquet iaculis. Cras imperdiet purus ut odio volutpat consequat. Praesent a
+        condimentum est. Etiam vestibulum ante in quam vestibulum sodales. Nam ac porttitor metus, non lacinia purus.
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+    <h2>Phasellus vestibulum eu sem et accumsan</h2>
+    <p>Aliquam nisi diam, mollis sit amet euismod fringilla, condimentum in tortor. Aenean elementum at libero eget
+        semper. Duis rutrum ante sit amet facilisis dapibus. Integer viverra, elit vel eleifend placerat, magna urna
+        pretium est, ut maximus purus libero eu nisi. Ut id posuere lacus. Suspendisse imperdiet, dui vitae fermentum
+        laoreet, diam erat semper erat, eget viverra elit enim id ipsum. Suspendisse ultrices leo a ligula auctor,
+        vehicula ultricies nisl ullamcorper. Aliquam scelerisque ullamcorper diam, vitae fringilla leo sollicitudin
+        quis. Vestibulum nec ex eu metus vestibulum finibus vitae nec sem. Ut aliquam blandit tristique. Mauris sit amet
+        ante non ante blandit fringilla.</p>
+
+    <h2>Sed orci velit, varius non neque vitae, tristique placerat sapien.</h2>
+    <p>Curabitur neque risus, tincidunt non suscipit id, porttitor eget lacus. Fusce finibus eu massa quis ultrices. Nam
+        neque mauris, vestibulum eget condimentum ut, maximus at lectus. Donec mollis lobortis semper. Phasellus nec
+        felis aliquam turpis posuere mattis nec vitae ipsum. Suspendisse vel ex est. Donec vulputate ornare aliquam.
+        Phasellus condimentum nisl urna, non efficitur mauris dictum ut. Aenean venenatis mauris sem, vitae efficitur
+        nunc gravida et. Nam lobortis consequat purus sit amet congue. Vivamus vitae tortor neque. Nulla molestie, diam
+        id tempus ultrices, sem dolor rhoncus sapien, ac semper elit diam a nulla. Proin leo mauris, sollicitudin id
+        aliquet sit amet, tempor gravida lacus. Aenean sagittis venenatis vehicula.</p>
+
+    <h2>Sed orci velit, varius non neque vitae, tristique placerat sapien.</h2>
+    <p>Curabitur neque risus, tincidunt non suscipit id, porttitor eget lacu</p>
+
+    <script language="javascript" type="text/javascript">
+        /*
+cuando me coloque en un parrafo  color cambie a rojo.
+Cuando salga del parrafo vuelva al color original
+Cuando me coloque en el primer y ultimo titulo le aumentamos el tamaño y al resto se lo
+diminuimos.
+Cuando pinche en el primer titulo que se oculte el ultimo parrafo
+*/
+
+        //cambiar color a parrafos---------
+
+
+        var ps = document.getElementsByTagName("p");
+
+        for (var i = 0; i < ps.length; i++) {
+
+            ps[i].onmouseover = function () {
+
+                this.style.color = "red";
+                this.style.backgroundColor = "yellow";
+            }
+
+            ps[i].onmouseout = function () {
+
+                this.style.color = "black";
+                this.style.backgroundColor = "white";
+            }
+
+        }
+
+        //primer y ultimo titulo aumentan, resto disminuyen---------  
+
+
+        var h2s = document.getElementsByTagName("h2");
+        //primero----
+        h2s[0].onmouseover = function () {
+
+            this.style.fontSize = "xx-large"
+        }
+
+        h2s[0].onmouseout = function () {
+
+            this.style.fontSize = "x-large"
+        }
+        //ultimo
+        h2s[h2s.length - 1].onmouseover = function () {
+
+            this.style.fontSize = "xx-large"
+        }
+
+        h2s[h2s.length - 1].onmouseout = function () {
+
+            this.style.fontSize = "x-large"
+
+
+        }
+
+        //los demás-----
+
+        h2s[1].onmouseover = function () {
+
+            this.style.fontSize = "xx-small"
+        }
+
+        h2s[1].onmouseout = function () {
+
+            this.style.fontSize = "x-large"
+
+        }
+
+        h2s[2].onmouseover = function () {
+
+            this.style.fontSize = "xx-small"
+        }
+
+        h2s[2].onmouseout = function () {
+
+            this.style.fontSize = "x-large"
+
+        }
+
+
+
+
+
+
+
+        //ocultar el ultimo onclick en el primero
+
+
+        h2s[0].onclick = function () {
+
+            h2s[h2s.length - 1].style.visibility = "hidden";
+        }
+    </script>
+
+
+</body>
+
+</html>

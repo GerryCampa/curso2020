@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FUNCIONES con ARRAY</title>
+    <script language="javascript" type="text/javascript" src="FuncionesArray.js">
+    </script>
+
+</head>
+
+<body>
+
+
+    <h1>TRABAJANDO CON CADENAS. VALIDACION DE DNI</h1>
+
+    <script language="javascript" type="text/javascript">
+        /*Crear programa cara cargar DNI e implementar funcion q verifique que la letra es correctas*/
+
+
+      var letraDNI= new Array ("t", "r", "w","a","g", "m", "y", "f", "p","d", "x", "b","n", "j", "z", "s", "q", "v", "h", "l", "c", "k","e", "t");
+
+      var numero, letra, resto;
+
+      var nif=prompt ("Introduzca el NIF");
+
+      letra= nif.charAt(nif.length-1);
+      numero=nif.substr(0, nif.length-1);
+      numero=parseInt(numero);
+      resto=numero %23;
+      if (letraDNI[resto]==letra.toLowerCase()){
+
+        document.write("El DNI "+nif+ " es válido "+"</br>")
+
+
+      }
+
+      else{
+
+        document.write("El DNI "+nif+" no es válido.");
+
+      }
+      
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Parrafo </title>
+</head>
+
+<body>
+
+    <h2 id="titulo">Al pinchar el enlace, se completa el párrafo (aparece el resto en rojo) y el vínculo desaparece. Si pinchamos este título, vuelta al principio.</h2>
+
+    <style>
+        #ocultado {
+
+            font-size: 24px;
+            color: red;
+            display: none;
+        }
+    </style>
+
+    <p>Consectetur adipiscing elit. Etiam sollicitudin venenatis porttitor. Suspendisse ullamcorper non nisl id aliquet.
+        Vivamus semper risus facilisis aliquet iaculis. Cras imperdiet purus ut odio volutpat consequat. Praesent a
+        condimentum est. Etiam vestibulum ante in quam vestibulum sodales. Nam ac porttitor metus, non lacinia purus.
+    </p>
+
+    <p id="ocultado">
+        Duis lacinia velit vel est vehicula, sagittis porta augue congue. Mauris mattis euismod laoreet. Nulla sagittis
+        venenatis sem, eu facilisis velit consectetur sit amet. Donec venenatis ante lectus, vel rhoncus magna fermentum
+        et. Vestibulum et ornare nisl, quis sodales purus. Aenean consectetur ante arcu, sed euismod tellus ultricies
+        vitae. Pellentesque laoreet felis diam, sed cursus est egestas eu. Cras consequat mi ipsum, sed mattis nibh
+        vehicula commodo. Donec viverra lobortis sem eu eleifend.</p>
+
+    <a id="enlace" href="#">Pincha aquí</a>
+
+
+
+    <script language="javascript" type="text/javascript">
+        //creamos funcion para mostrar párrafo y eliminar enlace
+        var pinchar = document.getElementById("enlace");
+        pinchar.onclick = function () {
+
+            var parrafo = document.getElementById("ocultado");
+            parrafo.style.display = 'block';
+
+            enlace.style.display = "none";
+
+            titulo.onclick = function () {
+
+                parrafo.style.display = 'none';
+
+                enlace.style.display = "block";
+            }
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

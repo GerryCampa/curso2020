@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My web page</title>
+
+
+</head>
+
+<body>
+
+    <h1 id="titulo1">Seven wonders of the world</h1>
+    <p>Do you know the seven wonders of the world?</p>
+
+
+
+    <div id="content">
+        <h2 id='cambiar'>Wonders from Antiquity</h2>
+
+        <p>This list comes to us from ancient times.</p>
+
+
+        <ul class="wonders" id="ancient">
+            <li class="traducir">Great Pyramid of Giza</li>
+            <li class="traducir">Hanging Gardens of Babylon</li>
+            <li>Lighthouse of Alexandria</li>
+            <li>Statue of Zeus at Olympia</li>
+            <li class="traducir">Temple of Artemis at Ephesus</li>
+            <li>Mausoleum at Halicarnassus</li>
+            <li class="traducir">Colossus of Rhodes</li>
+        </ul>
+
+
+
+        <h2>Modern wonders of the world</h2>
+
+        <p>This list was decided by vote.</p>
+
+
+        <ul class="wonders" id="new">
+            <li>Petra</li>
+            <li class="formato">Great Wall of China</li>
+            <li>Christ the Redeemer</Li>
+            <li>Machu Picchu</Li>
+            <li>Chichen Itza</li>
+            <li class="formato">Closseum</li>
+            <li class="formato">Taj Mahal</li>
+        </ul>
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World">Seven
+                    Wonders of the Ancient World</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/New7Wonders_of_the_World">New Wonders of the
+                    World</a></li>
+        </ul>
+    </div>
+
+
+
+    <script type="text/javascript">
+        var traduccion = new Array("Gran Piramide", "Jardines Colgantes de Babilonia", "Templo de Artemisa en Éfeso",
+            "Coloso de Rodas");
+
+
+        // Para la primera lista
+        //Cambiar el texto de los li(1,2,5,7)  a su traducion
+        //a traves de un evento con su titulo
+
+        var originales = document.getElementsByClassName("traducir");
+
+        var pinchar = document.getElementById("cambiar");
+
+
+
+        pinchar.onclick = function () {
+
+            for (i = 0; i < originales.length; i++) {
+
+                originales[i].innerHTML = traduccion[i];
+
+                originales[i].style.color = "red";
+
+
+            }
+
+
+        }
+
+
+        //Para la segunda lista
+        //cambiar el tamaño y color de fondo des li //2,6,7 de 
+        //a traves de un evento asociado a //pasar-quitar el puntero por encima
+
+        
+
+
+        var nodosFormato = getElementsByClassName("formato");
+
+        for (var i = 0; i < nodosFormato; i++) {
+
+            nodosFormato[i].onmouseover = function () {
+
+                this.style.fontSize = "x-large";
+                this.style.backgroundColor = "red";
+                
+
+
+            }
+            nodosFormato[i].onmouseout = function () {
+
+                this.style.fontSize = "medium";
+                this.style.backgroundColor = "white";
+
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

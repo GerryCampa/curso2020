@@ -1,56 +1,62 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Ejercicio DOM_3_3</title>
+        <meta name="author" content="Liliana Queipo">
+        <script type="text/javascript">
+            function inserta(){
+				var nodoDl,nodoTexto,nodoDt,nodoStrog,nodoDd;
+			
+				nodoDl=document.createElement("dl");
+				
+				nodoTexto=document.createTextNode("OVIEDO");
+				nodoDt=document.createElement("dt");
+				nodoStrong=document.createElement("strong");
+				nodoStrong.appendChild(nodoTexto);
+				nodoDt.appendChild(nodoStrong);
+				nodoDl.appendChild(nodoDt);
+				
+				nodoDd=document.createElement("dd");
+				nodoTexto=document.createTextNode("capital de Asturias");
+				nodoDd.appendChild(nodoTexto);
+				nodoDl.appendChild(nodoDd);
+				//segundo dt
+				nodoTexto=document.createTextNode("GIJON");
+				nodoDt=document.createElement("dt");
+				nodoStrong=document.createElement("strong");
+				nodoStrong.appendChild(nodoTexto);
+				nodoDt.appendChild(nodoStrong);
+				nodoDl.appendChild(nodoDt);
+				
+				nodoDd=document.createElement("dd");
+				nodoTexto=document.createTextNode("mar Cantabrico");
+				nodoDd.appendChild(nodoTexto);
+				nodoDl.appendChild(nodoDd);
+				//tercer elemento
+				nodoTexto=document.createTextNode("MIERES");
+				nodoDt=document.createElement("dt");
+				nodoStrong=document.createElement("strong");
+				nodoStrong.appendChild(nodoTexto);
+				nodoDt.appendChild(nodoStrong);
+				nodoDl.appendChild(nodoDt);
+				
+				nodoDd=document.createElement("dd");
+				nodoTexto=document.createTextNode("mportante centro de explotación de minas de carbón ");
+				nodoDd.appendChild(nodoTexto);
+				nodoDl.appendChild(nodoDd);
+				
+				
+				
+				document.getElementById("content").appendChild(nodoDl);
+			}
+            
 
-<head>
-    
-    <meta charset="UTF-8">
-    <title>Ejercicio 15 - DOM basico y atributos XHTML</title>
-
-
-</head>
-
-
-
-<body>
-    <h3 class="beginning" onclick="inserta()">CIUDADES ASTURIANAS</h3>
-
-
-    <div id="content">
-      
-       
-
-
-
-    </div>
-
-
-    
-    <script type="text/javascript">
-        //crear texto para un nuevo elemento "javascript", con una funcion
-
-        function inserta() {
-
-
-            var nodoDl = document.createElement("dl"); 
-            var nodoTexto=document.createTextNode("OVIEDO");
-            var nodoDt=document.createElement("dt");
-            var nodoStrong=document.createElement("strong");
-            nodoStrong=document.appendChild(nodoTexto);
-            nodoDt.appendChild(nodoStrong);
-            nodoDl.appendChild(nodoDt);
-
-            var nodoDd=document.createElement("dd");
-            nodoTexto=document.createTextNode("Ccapital de Asturias");
-            nodoDl.appendChild(nodoDd);
-
-
-        }
-
-
-        
-    </script>
-
-</body>
-
+        </script>
+    </head>
+    <body>
+        <h3 onclick="inserta()">CIUDADES ASTURIANAS</h3>
+        <div id="content">
+		</div>
+    </body>
 </html>

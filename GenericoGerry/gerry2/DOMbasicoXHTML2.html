@@ -1,92 +1,72 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>Ejercicio 14 - DOM basico y atributos XHTML</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio 14 - DOM básico y atributos XHTML</title>
 
 
 </head>
 
-
-
 <body>
-    <h3 class="beginning" onclick="nuevaLista()">Some languages</h3>
-    <div id="content">
-        <ul id="languages">
-            <li id="cpp" onclick="add()">C++</li>
-            <li id="java">Java</li>
-            <li id="csharp">C#</li>
-            <li id="php">PHP</li>
-        </ul>
-    </div>
-    <script type="text/javascript">
-        //crear texto para un nuevo elemento "javascript", con una funcion
-
-        function add() {
+<h3 id="beginning" >Some languages</h3> 
+<div id="content"> 
+<ul id="languages"> 
+<li id="cpp" onclick="aniadir()">C++</li> 
+<li id="java">Java</li> 
+<li id="csharp">C#</li> 
+<li id="php">PHP</li> 
 
 
+</ul> 
+</div>
+<script type="text/javascript">
 
+function aniadir(){
+	//creamos el texto del nuevo elemento
+	var nuevoTexto=document.createTextNode("JAVASCRIPT");
+	//creamos el elemento li
+	var nuevoElemento=document.createElement("li");
+	//enlazamos el elemento con su texto
+	nuevoElemento.appendChild(nuevoTexto);
 
-            var nuevoTexto = document.createTextNode(
-            "JAVASCRIPT"); //crea un texto de tipo nodo. Su parámentro es el texto "JAVASCRIPT"
+	//cogo el nodo ul
+	var nodoUl=document.getElementById("languages");
+	//enlazamos la lista con el nuevo item
+	nodoUl.appendChild(nuevoElemento);
 
-            var nuevoElemento = document.createElement(
-            "li"); //esto proporciona el tipo de nodo, en este caso "li" de lista.
+}
 
-            nuevoElemento.appendChild(nuevoTexto); //esto adjunta al "li", su texto.
+var titulo=document.getElementById("beginning");
 
-            var nodoUl = document.getElementById("languages"); //esto engancha al ul por su id
+titulo.onclick=function(){
+	var nuevoTitulo=document.createElement("h3");
+	var nuevoTexto=document.createTextNode("OTRAS APLICACIONES");
+	nuevoTitulo.appendChild(nuevoTexto);
+	document.getElementById("content").appendChild(nuevoTitulo);
+	
+	var nuevoUl=document.createElement("ul");
+	var nuevoItem=document.createElement("li");
+		nuevoTexto=document.createTextNode("Eclipse");
+		nuevoItem.appendChild(nuevoTexto);
+		nuevoUl.appendChild(nuevoItem);
+		
+		
+		nuevoItem=document.createElement("li");
+		nuevoTexto=document.createTextNode("Visual Studio");
+		nuevoItem.appendChild(nuevoTexto);
+		nuevoUl.appendChild(nuevoItem);
+		
+		nuevoItem=document.createElement("li");
+		nuevoTexto=document.createTextNode("Apache Tomcat");
+		nuevoItem.appendChild(nuevoTexto);
+		nuevoUl.appendChild(nuevoItem);
+		
+		
+		document.getElementById("content").appendChild(nuevoUl);
+		
 
-            nodoUl.appendChild(nuevoElemento) // esto adjunta al ul enganchado, el nuevo hijo llamado nuevoElemento
-
-
-        }
-
-
-        //crear lista de otras aplicaciones, con su h3 de titulo
-
-        var titulo = document.getElementsByClassName("beginning"); //esto atrapa el h3 inicial
-
-        titulo.onclick = function nuevaLista () {
-
-            var nuevoTitulo = document.createElement("h3"); // creamos un nuevo h3
-            var nuevoTexto = document.createTextNode("OTRAS APLICACIONES"); //creamos el texto de ese h3
-            nuevoTitulo.appendChild(nuevoTexto); //esto adjunta a nuevo h3, su texto
-            document.getElementById("content").appendChild(nuevoTitulo); //esto agarra el div id="content" q lo contiene todo
-
-
-            var nuevoUl = document.createElement("ul"); //creamos la nueva lista
-            var nuevoItem = document.createElement("li"); //creamos los nuevos elementos de lista
-            nuevoTexto = document.createTextNode("Eclipse"); //esto crea el texto del primer elemento de la lista
-            nuevoItem.appendChild(nuevoTexto);
-            nuevoUl.appendChild(nuevoItem);
-
-
-            nuevoItem = document.createElement("li"); //creamos  nuevo elementos de lista
-            nuevoTexto = document.createTextNode(
-            "VisualStudio"); //esto crea el texto del segundo elemento de la lista
-            nuevoItem.appendChild(nuevoTexto);
-            nuevoUl.appendChild(nuevoItem);
-
-
-            nuevoItem = document.createElement("li"); //creamos  nuevo elementos de lista
-            nuevoTexto = document.createTextNode("Apache"); //esto crea el texto del tercer elemento de la lista
-            nuevoItem.appendChild(nuevoTexto);
-
-            nuevoUl.appendChild(nuevoItem);
-
-            document.getElementById("content").appendChild(nuevoUl);
-
-
-
-
-
-
-        }
-    </script>
+}
+</script>
 
 </body>
-
 </html>

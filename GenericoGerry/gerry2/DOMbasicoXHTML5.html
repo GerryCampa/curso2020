@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio DOM_3_3</title>
+    <meta name="author" content="Liliana Queipo">
+    <script type="text/javascript">
+        function inserta() {
+            var nodoDl, nodoTexto, nodoDt, nodoStrog, nodoDd;
+
+            nodoDl = document.createElement("dl");
+
+            nodoTexto = document.createTextNode("OVIEDO");
+            nodoDt = document.createElement("dt");
+            nodoStrong = document.createElement("strong");
+            nodoStrong.appendChild(nodoTexto);
+            nodoDt.appendChild(nodoStrong);
+            nodoDl.appendChild(nodoDt);
+
+            nodoDd = document.createElement("dd");
+            nodoTexto = document.createTextNode("capital de Asturias");
+            nodoDd.appendChild(nodoTexto);
+            nodoDl.appendChild(nodoDd);
+            //segundo dt
+            nodoTexto = document.createTextNode("GIJON");
+            nodoDt = document.createElement("dt");
+            nodoStrong = document.createElement("strong");
+            nodoStrong.appendChild(nodoTexto);
+            nodoDt.appendChild(nodoStrong);
+            nodoDl.appendChild(nodoDt);
+
+
+            //--------------------------------------------
+
+            var newTerm = document.createElement("dt"); // Create a dt node
+            var textoNewTerm = document.createTextNode("Candás"); // Create a text node
+            newTerm.appendChild(textoNewTerm); // Append the text to dt
+
+            var newDef = document.createElement("dd"); // Create a dt node
+            var textoNewDef = document.createTextNode("Ciudad marinera"); // Create a text node
+            newDef.appendChild(textoNewDef); // Append the text to dt
+
+
+
+
+            // Obtener una referencia al nodo padre
+            var parentDl = document.getElementById("childElement").parentNode;
+
+
+
+            var insertedNode = parentNode.insertBefore(newNode, referenceNode);
+
+
+
+
+
+            //-------------------------------------------
+
+            nodoDd = document.createElement("dd");
+            nodoTexto = document.createTextNode("mar Cantabrico");
+            nodoDd.appendChild(nodoTexto);
+            nodoDl.appendChild(nodoDd);
+            //tercer elemento
+            nodoTexto = document.createTextNode("MIERES");
+            nodoDt = document.createElement("dt");
+            nodoStrong = document.createElement("strong");
+            nodoStrong.appendChild(nodoTexto);
+            nodoDt.appendChild(nodoStrong);
+            nodoDl.appendChild(nodoDt);
+
+            nodoDd = document.createElement("dd");
+            nodoTexto = document.createTextNode("mportante centro de explotación de minas de carbón ");
+            nodoDd.appendChild(nodoTexto);
+            nodoDl.appendChild(nodoDd);
+
+
+
+            document.getElementById("content").appendChild(nodoDl);
+        }
+    </script>
+</head>
+
+<body>
+    <h3 onclick="inserta()">CIUDADES ASTURIANAS</h3>
+    <div id="content">
+    </div>
+</body>
+
+</html>

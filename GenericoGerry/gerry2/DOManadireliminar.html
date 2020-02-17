@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Añade, modifica o elimina elementos mediante 3 botones</h1>
+    <hr>
+
+    <div id="padre">
+
+        <h3>Párrafo 1</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta placeat libero inventore, eveniet harum
+            totam quae dignissimos enim omnis nobis vero, numquam quas accusamus eaque? Dolore deleniti possimus dolorum
+            mollitia?</p>
+
+        <h3 id="insertarantes">Párrafo 2</h3>
+        <p id="parrafo2">Hic explicabo nulla sed. Sit, quaerat? Magni, dignissimos, quasi molestias nostrum magnam
+            doloremque accusantium corporis libero autem, ipsa illum deserunt quo illo!</p>
+
+        <div id="paraElminar">
+            <h3 id="titulo2">Párrafo 3</h3>
+            <p id="parrafo2">Delectus cupiditate reiciendis nulla voluptatum similique minima eum, repudiandae
+                accusantium modi. Necessitatibus odit sed in asperiores iste ratione facere vitae repellendus cum!</p>
+
+        </div>
+
+
+    </div>
+
+    <input type="submit" name="aniadir" value="Añadir" onclick="aniadir()">
+    <input type="submit" name="modificar" value="Modificar" onclick="modificar()">
+    <input type="submit" name="eliminar" value="Elimina" onclick="eliminar()">
+
+
+    <script>
+        function aniadir() {
+            var nodoTexto, nodoTitulo, nodoParrafo, nodoSiguiente;
+
+            // Creamos el nuevo h3 con su texto
+            nodoTexto = document.createTextNode("NUEVO TITULO AÑADIDO");
+            nodoTitulo = document.createElement("h3");
+            nodoTitulo.appendChild(nodoTexto);
+
+            // Insertamos el nuevo h3 antes del segundo titulo, que se llama "insertarantes" y está metido en nodoSiguiente
+            nodoSiguiente = document.getElementById("insertarantes");
+            document.getElementById("padre").insertBefore(nodoTitulo, nodoSiguiente);
+
+            // Creamos el nuevo parrafo con su texto
+            nodoTexto = document.createTextNode("Este es el párrafo nuevo que hemos añadido con el botón AÑADIR");
+            nodoParrafo = document.createElement("p");
+            nodoParrafo.appendChild(nodoTexto);
+
+            // Insertamos el nuevo parrafo antes del segundo título
+            document.getElementById("padre").insertBefore(nodoParrafo, nodoSiguiente);
+
+        }
+
+
+        function modificar() {
+            var nodoTexto, nodoTitulo, nodoViejo, nodoParrafo;
+
+            // Creamos el texto que vamos a añadir en lugar del párrafo 2
+            nodoTexto = document.createTextNode("TEXTO MODIFICADO");
+            nodoParrafo = document.createElement("p");
+            nodoParrafo.appendChild(nodoTexto);
+
+            // Indicamos donde va a reemplazarse el texto
+            nodoViejo = document.getElementById("parrafo2");
+
+            // Reemplazamos el texto del párrafo 2 por el nuevo texto
+            document.getElementById("padre").replaceChild(nodoParrafo, nodoViejo);
+        }
+
+        function eliminar() {
+
+            var eliminar=document.getElementById("paraEliminar");
+
+            eliminar.parentElement.removeChild(eliminar);
+
+
+        }
+    </script>
+
+</body>
+
+</html>

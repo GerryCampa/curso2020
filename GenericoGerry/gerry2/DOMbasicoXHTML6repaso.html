@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Ejercicio DOM básico repaso</title>
+        <meta name="author" content="">
+
+
+        <body>
+
+            <div id="div1"></div>
+    
+            <p id="p1">Esto es un párrafo</p>
+            <p id="p2">Esto es otro párrafo</p>
+    
+    
+            
+        </body>
+
+
+
+
+        <script type="text/javascript">
+
+        document.getElementById("p1").onclick= function(){
+
+            var nodoTexto=document.createTextNode("Esto es nuevo");
+            nodoNuevoParrafo=document.createElement("p");
+            nodoNuevoParrafo.appendChild(nodoTexto);
+
+
+            document.getElementById("div1").insertBefore(nodoNuevoParrafo, document.getElementById("div1"))
+
+            nodosParrrafos=document.getElementsByTagName("p");
+            nodoNuevoParrafo.
+        }
+            
+
+        </script>
+    </head>
+    
+</html>

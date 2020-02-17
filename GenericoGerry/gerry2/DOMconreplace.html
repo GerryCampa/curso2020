@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio 14 - DOM básico y atributos XHTML</title>
+
+
+</head>
+
+<body>
+
+<h1>ANIADIR ELEMENTOS A UNA LISTA</h1>
+<hr>
+
+<h3 id="titulo" class="beginning" onclick="clic()">Some languages</h3> 
+<div id="content"> 
+<ul id="languages"> 
+<li id="cpp" onclick="aniadir()">C++</li> 
+<li id="java">Java</li> 
+<li id="csharp">C#</li> 
+<li id="php">PHP</li> 
+</ul> 
+</div>
+
+<script type="text/javascript">
+
+// Reemplazamos al hacer click en Java
+document.getElementById("java").onclick=function() 
+{
+    var nodoTexto,nuevoNodo,nodoPadre,nodoViejo;
+    nodoTexto=document.createTextNode("NUEVO TEXTO");
+    nuevoNodo=document.createElement("li");
+    nuevoNodo.appendChild(nodoTexto);
+
+    // Ahora añadimos
+    nodoPadre=document.getElementById("languages");
+    nodoViejo=document.getElementById("csharp");
+    nodoPadre.replaceChild(nuevoNodo,nodoViejo);
+
+}
+
+// Eliminamos el elemento PHP al hacer cick en el H3
+document.getElementById("titulo").onclick=function()
+{
+    document.getElementById("languages").removeChild(document.getElementById("php"));
+    // se podria haber hecho con un var nodoEliminado=document.getElementById("php")
+    // y decirle que lo elimine con document.getElementById("languages")removeChild("nodoEliminado")
+    // en vez de "removeChild(document.getElementById("php")
+}
+
+
+
+</script>
+
+</body>
+</html>

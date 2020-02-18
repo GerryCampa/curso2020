@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Practicando con jQuery </title>
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            //titulo
+
+
+            $(".titulo").on({
+
+                click: function () {
+                    $("tr").css("background-color", "lightgray");
+                    $("tr").css("color", "red");
+                    $("tr").css("font-size", "20px");
+                    $("tr").css("text-decoration", "underline");
+
+
+                },
+
+                mouseenter: function () {
+                    $(this).css("background-color", "red");
+                },
+
+                mouseleave: function () {
+                    $(this).css("background-color", "white");
+                },
+
+
+                dblclick: function () {
+                    $("tr").css("background-color", "white");
+                    $("tr").css("color", "blue");
+                    $("tr").css("font-size", "30px");
+                    $("tr").css("text-decoration", "initial");
+                }
+
+            });
+
+            //tr uno
+
+            $(".uno").on({
+
+                mouseover: function () {
+                    $(".uno").css("background-color", "yellow");
+                    $(".uno").css("color", "black");
+                    $(".uno").css("font-size", "50px");
+
+
+
+                },
+
+
+
+                mouseleave: function () {
+                    $(".uno").css("background-color", "white");
+                    $(".uno").css("color", "black");
+                    $(".uno").css("font-size", "30px");
+
+                }
+
+
+
+
+            });
+
+            //tr dos
+            $(".dos").on({
+
+                mouseover: function () {
+                    $(".dos").css("background-color", "blue");
+                    $(".dos").css("color", "black");
+                    $(".dos").css("font-size", "50px");
+
+
+
+                },
+
+
+
+                mouseleave: function () {
+                    $(".dos").css("background-color", "white");
+                    $(".dos").css("color", "black");
+                    $(".dos").css("font-size", "30px");
+
+                }
+
+
+
+
+            });
+
+
+            //tr tres
+            $(".tres").on({
+
+                mouseover: function () {
+                    $(".tres").css("background-color", "green");
+                    $(".tres").css("color", "black");
+                    $(".tres").css("font-size", "50px");
+
+
+
+                },
+
+
+
+                mouseleave: function () {
+                    $(".tres").css("background-color", "white");
+                    $(".tres").css("color", "black");
+                    $(".tres").css("font-size", "30px");
+
+                }
+
+
+
+
+            });
+
+
+
+
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <h3 class="titulo">Comparativa Tierra-Venus</h3>
+
+    <hr>
+
+    <table border='1'style="color: red">
+        <tr class="uno">
+            <th>***</th>
+            <td>Velocidad orbital media</td>
+            <td>Inclinación(*)</td>
+            <td>Número de satélites</td>
+
+        </tr>
+
+        <tr class="dos">
+            <th>Tierra</td>
+            <td>Menos de 11,2 km/s</td>
+            <td>23,45</td>
+            <td>1</td>
+
+        </tr>
+
+        <tr class="tres">
+            <th>Venus</td>
+            <td>Aprox. 11,2 km/s</td>
+            <td>2,65</td>
+            <td>0</td>
+        </tr>
+
+
+</body>
+
+</html>

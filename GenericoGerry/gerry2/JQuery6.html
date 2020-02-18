@@ -7,13 +7,32 @@
     <script type="text/javascript" src="jquery-2.1.3.js"></script>
 
     <script>
-        $(document).ready(function ($) {
-                    $('input.maxtickets_enable_cb').change(function () {
-                        if ($(this).is(':checked'))
-                            $(this).next('div.datoMayores').show();
-                        else
-                            $(this).next('div.datoMayores').hide();
-                    });
+        $(document).ready(function () {
+
+            $(".formulariomayores").css("display", "none");
+
+
+
+            $("#mayoria_edad").click(function () {
+
+                if ($(this).prop("checked")) {
+
+                    $(".formulariomayores").css("display", "block");
+                    $(".formulariomayores").css("background", "red");
+                    $(".formulariomayores").css("color", "blue");
+                    
+
+                } else {
+                    $(".formulariomayores").css("display", "none");
+
+
+                }
+
+
+            });
+
+
+        });
     </script>
 
 </head>
@@ -24,11 +43,20 @@
     Nombre<input type="text" id="Nombre" name="Nombre" size="30" value="" /><br />
 
     <br>
+    <br>
 
-    <input type="checkbox" id="mayor" />Soy mayor de edad<br />
 
-    <div class="datoMayores">
-        Dato para mayores de edad<input type="text" name="mayores">
+    <input type="checkbox" id="mayoria_edad" />Soy mayor de edad
+
+    <br>
+    <br>
+
+
+    <div class="formulariomayores">
+        Dato para mayores de edad <input type="text" name="mayores">
+
+
+
     </div>
 
 

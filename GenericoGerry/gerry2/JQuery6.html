@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Practicando con jQuery </title>
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+
+    <script>
+        $(document).ready(function ($) {
+                    $('input.maxtickets_enable_cb').change(function () {
+                        if ($(this).is(':checked'))
+                            $(this).next('div.datoMayores').show();
+                        else
+                            $(this).next('div.datoMayores').hide();
+                    });
+    </script>
+
+</head>
+
+<body>
+
+
+    Nombre<input type="text" id="Nombre" name="Nombre" size="30" value="" /><br />
+
+    <br>
+
+    <input type="checkbox" id="mayor" />Soy mayor de edad<br />
+
+    <div class="datoMayores">
+        Dato para mayores de edad<input type="text" name="mayores">
+    </div>
+
+
+
+
+</body>
+
+</html>

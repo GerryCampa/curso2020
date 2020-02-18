@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Practicando con jQuery </title>
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#parrafo1").click(function () {
+
+                //instrucciones asociadas al click en el parrafo
+
+                $("#negrita").css("font-weight", "bold");
+                $("#negrita").css("color", "red");
+                $("#negrita").css("background", "yellow");
+                $(".titulo").css("color", "blue");
+                $(".titulo").css("font-size", "50px");
+
+            });
+
+            $("#negrita").click(function () {
+
+                $(".titulo").css("background", "yellow");
+
+
+            });
+
+            $(".titulo").mouseenter(function(){
+
+                $("#parrafo1").css("background", "red");
+            });
+
+            $("h3").mouseleave(function(){
+
+                $("#parrafo1").css("background", "blue");
+            })
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <a href="http://jquery.com/download/">Enlace</a>
+
+    <h3 class="titulo">Lorem Ipsum whatever</h3>
+    <p id="parrafo1">Bblabla <span id="negrita">consecratur </span>tamtum pelis et ossa fuit</p>
+    </span>
+
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Practicando con jQuery </title>
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".titulo1").click(function () {
+
+                //instrucciones asociadas al click en el primer titulo
+
+                $(".titulo1").css("color", "blue");
+                $(this).css("font-size", "50px");
+
+            });
+
+
+
+            $(".parrafos").mouseenter(function () {
+
+                $(this).css("color", "red");
+            });
+
+            $(".parrafos").mouseleave(function () {
+
+                $(this).css("color", "blue");
+            });
+
+            $(".parrafos").click(function () {
+
+                $(this).css("color", "black");
+            });
+
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <a href="http://jquery.com/download/">Enlace</a>
+
+    <h3 class="titulo1">Estudios Científicos BruxZir®</h3>
+    <p class="parrafos">Bblabla <span id="negrita">consecratur </span>tamtum pelis et ossa fuit. Una fundación independiente, sin fines de lucro, de educación dental y prueba de productos, Clinicians Report®, noviembre de 2018.
+    </p>
+    </span>
+
+    <h3 class="titulo">Gordon J. Christensen Clinicians Report®</h3>
+    <p class="parrafos">Bblabla <span id="negrita">consecratur </span>tamtum pelis et ossa fuit. Los informes completos que presentamos a continuación  evalúan la integridad y el rendimiento del Zirconio Monolítico  BruxZir®. Se realizaron investigaciones sobre biomateriales, estudios universitarios e informes clínicos para examinar lo adecuadamente que varios materiales incorporan las características vitales para las restauraciones dentales de alta calidad. </p>
+    </span>
+
+    <h3 class="titulo">Zirconio: El material para coronas con tonalidades dentales</h3>
+    <p class="parrafos">Bblabla <span id="negrita">consecratur </span>tamtum pelis et ossa fuit. Además, las pruebas que evalúan la resistencia, el desgaste y la translucidez afirman las ventajas del Zirconio Monolítico BruxZir en comparación con otras restauraciones totalmente cerámicas.</p>
+    </span>
+
+    <h3 class="titulo">Estudio clínico de 8 años basado en la práctica</h3>
+    <p class="parrafos">Bblabla <span id="negrita">consecratur </span>tamtum pelis et ossa fuit. El Zirconio Monolítico BruxZir® Full-Strength es el que mejor cumple  con las siete características buscadas por TRAC Research (Investigación en Tecnologías de Restauración y Caries)</p>
+    </span>
+
+
+</body>
+
+</html>

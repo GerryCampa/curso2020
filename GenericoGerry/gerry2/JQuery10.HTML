@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Practicando con jQuery (ocultar) </title>
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+</head>
+
+<body>
+    
+
+
+    <input type="button" name="oculta" value="Oculta/muestra elementos" class="ocultar"/>
+
+
+
+    <div id="parrafo1">
+        <p>Consectetur adipiscing elit. Etiam sollicitudin venenatis porttitor. Suspendisse ullamcorper non nisl id
+            aliquet. Vivamus semper risus facilisis aliquet iaculis. </p>
+
+    </div>
+
+
+    <div id="parrafo2">
+
+        <p>Aliquam nisi diam, mollis sit amet euismod fringilla, condimentum in tortor. Aenean elementum at libero eget
+            semper. Duis rutrum ante sit amet facilisis dapibus.</p>
+
+    </div>
+
+    <div id="parrafo3">
+
+        <p>Curabitur neque risus, tincidunt non suscipit id, porttitor eget lacus. Fusce finibus eu massa quis ultrices.
+            Nam neque mauris, vestibulum eget condimentum ut, maximus at lectus. Donec mollis lobortis semper.</p>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+
+$(document).ready(function(){
+  $(".ocultar").click(function(){
+    $("#parrafo1").toggle(3000);
+    $("#parrafo2").toggle(2000);
+    $("#parrafo3").toggle(1000);
+
+  });
+});
+
+
+
+
+    </script>
+
+</body>
+
+</html>

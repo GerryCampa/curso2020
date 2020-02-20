@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+
+<body>
+<h3>Examen pregunta 1. Notas de alumnos</h3>
+
+<script language="javascript" type="text/javascript">
+
+//funciones
+
+function indicarMayor(array) {
+
+	var mayor=array[0];
+	for(var i=0;i<array.length;i++) {
+		if(array[i]>mejornota) {
+		mejornota=array[i];
+		}
+	}
+	return mayor;
+}
+
+//variables
+
+
+
+var notas=new Array(5, 3, 8);
+var notamedia=0;
+var mejornota=0;
+
+var notamedia= (5+3+8)/notas.length;
+
+document.write("La nota media de 5, 3 y 8 es: " +notamedia +"<br/>");
+
+
+
+
+
+// Mostrar la nota más grande
+
+
+
+for (i=0; i<=mejornota;i++){
+    if (notas[i]>mejornota) {
+        var mejornota=notas[i];
+    }
+}
+
+document.write("La nota mayor es: " +mejornota +"<br/>");
+
+
+for (i=0; i<notas.length;i++){
+
+    if (notas[i]>=5){
+
+        i++;
+
+        document.write("Aprobado el alumno "+ i+"</br>");
+    }
+    
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>	 

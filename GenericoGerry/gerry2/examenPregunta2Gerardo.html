@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My web page</title>
+	
+	
+</head>
+
+<body>
+
+<h1 class="titulo1" onclick="aniadir()">Seven wonders of the world</h1>
+<p class= "parrafo">Do you know the seven wonders of the world?</p>
+<div id="content">
+    <h2 id='cambiar'>Wonders from Antiquity</h2>
+    <p>This list comes to us from ancient times.</p>
+    <ul class="wonders" id="ancient">
+        <li class="exists">Great Pyramid of Giza</li>
+        <li class="traducir">Hanging Gardens of Babylon</li>
+        <li class="faro">Lighthouse of Alexandria</li>
+        <li class="estatua">Statue of Zeus at Olympia</li>
+        <li class="traducir">Temple of Artemis at Ephesus</li>
+        <li>Mausoleum at Halicarnassus</li>
+        <li class="traducir">Colossus of Rhodes</li>
+    </ul>
+    <h2 id="titulo2" onclick="modificar()">Modern wonders of the world</h2>
+    <p>This list was decided by vote.</p>
+    <ul class="wonders" id="new">
+        <li>Petra</li>
+        <li class='formato'>Great Wall of China</li>
+        <li>Christ the Redeemer</Li>
+        <li id="machu">Machu Picchu</Li>
+        <li>Chichen Itza</li>
+        <li class='formato'>Closseum</li>
+        <li class="taj" onclick="eliminar()">Taj Mahal</li>
+    </ul>
+    <h2>References</h2>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World">Seven
+Wonders of the Ancient World</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/New7Wonders_of_the_World">New Wonders of the
+World</a></li>
+    </ul>
+</div> 
+
+
+   
+
+
+<script type="text/javascript">
+
+
+//FUNCION AÑADIR UN LI A LA PRIMERA LISTA
+
+function aniadir() {
+    
+//creamos el texto del nuevo elemento para la primera lista
+var nuevoTexto=document.createTextNode("La nueva maravilla es the Temple of Doom");
+	//creamos el elemento li
+	var nuevoElemento=document.createElement("li");
+	//enlazamos el elemento con su texto
+	nuevoElemento.appendChild(nuevoTexto);
+
+	//cojo el nodo ul
+	var nodoUl=document.getElementById("ancient");
+	//enlazamos la lista con el nuevo li
+	nodoUl.appendChild(nuevoElemento);
+
+}
+
+
+//FUNCION MODIFICAR UN LI A LA SEGUNDA LISTA HACIENDO CLICK EN MODERN WONDERS
+
+
+function modificar(){
+var parrafoSustituir=document.getElementById("machu");
+var padre=document.getElementById("new");
+var texto=document.createTextNode("Ya no está el Machu");
+var parrafoNuevo=document.createElement("li");
+parrafoNuevo.appendChild(texto);
+padre.replaceChild(parrafoNuevo,parrafoSustituir);
+}
+
+
+
+
+
+
+
+//FUNCION BORRAR UN LI DE LA SEGUNDA LISTA PINCHANDO EN TAJ
+
+function eliminar() {
+// Accedo al nodo que quiero borrar
+var padre=document.getElementById("new");
+var nodosEliminar=document.getElementsByClassName("taj");
+// Desde ese nodo, accedo al padre, y después borro el mismo nodo
+for(var i=0;i<nodosEliminar.length;i++){
+
+padre.removeChild(nodosEliminar[i]);
+}
+}
+
+
+//FUNCION CAMBIAR COLOR ONMOUSEOVER, MOUSELEAVE, CON FONT-SIZE Y BACKGROUND COLOR
+
+nodo=document.getElementById("ancient");
+		nodo.onmouseover=function(){
+			this.style.color='red';
+			this.style.backgroundColor="black";
+            this.style.fontSize="30px";
+
+            nodo.onmouseleave=function(){
+			this.style.color='black';
+			this.style.backgroundColor="white";
+            this.style.fontSize="15px";
+
+            }
+
+
+
+        }
+
+
+	
+</script>
+	
+	
+</body>
+
+</html> 

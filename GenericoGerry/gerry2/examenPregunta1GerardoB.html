@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="shortcut icon" href="ruta_favicon.ico" type="image/ico"/>
+	<script type="text/javascript" src="jQuery3.4.1.js"></script>
+	<script language="javascript" type="text/javascript">
+	</script>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+
+            
+   var notas=new Array();
+   var salir=0;
+
+
+   function media(notas)
+   {
+		var media=0;
+		for(var i=0;i<notas.length;i++)
+			media=media+notas[i];
+		return media/notas.length;
+   }
+   function masAlta(notas)
+   {
+		var grande=-1;
+		for(var i=0;i<notas.length;i++)
+			{
+				if(grande<notas[i]) grande=notas[i];
+			}
+		return grande;
+   }
+   function aprobados(notas)
+   {
+	   var salir=new Array();
+	   var cont=0;
+		for(var i=0;i<notas.length;i++)
+			{
+				if(notas[i]>=5) 
+					{
+						salir[cont]=notas[i];
+						cont++;
+					}
+			}
+		return salir;
+   }
+  
+   
+   for(var i=0;i<3;i++)
+		{
+			var a=parseInt(prompt("Introduce las notas:"));
+			notas[i]=a;
+		}
+	
+	do{
+		opcion=parseInt(prompt("0 Salir.\n1 Nota media.\n2 Nota más alta.\n3 Aprobados."));
+		switch(opcion){
+			case 0:
+				salir=1;
+				break;
+			case 1:
+				var avg=media(notas);
+				alert("Media notas: "+m);
+				break;
+			case 2:
+				var high=grande(notas);
+				alert("Nota más alta: "+high);
+				break;
+			case 3:
+				var passed=aprobados(notas);
+				var texto="";
+				for(var i=0;i<a.length;i++)
+					texto=texto+" - "+passed[i];
+				alert("Aprobados: "+passed.length+"\nNotas: "+texto);
+				break;
+			default:
+				alert("Opción incorrecta.")
+		}
+	}while(salir==0);
+</script>
+</div>
+</body>
+</html>

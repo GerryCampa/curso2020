@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title> Repaso de arrays </title>
+    <script type="text/javascript" src="jquery-2.1.3.js"></script>
+</head>
+
+<body>
+    <h3>Futería. Arrays</h3>
+    <h2>Disponemos de manzanas a 1€, peras a 1,2€, limones a 1,9€ y fresas a 3,1€</h2>
+    <hr><br />
+
+
+
+    <script language="javascript" type="text/javascript">
+        //funciones
+
+        function posicionMayorBeneficio(precioArticulo, cantidadArticulo) {
+            var mejorBeneficio = 0;
+            for (var i = 0; i < precioArticulo.length; i++) {
+
+                if ((precioArticulo[i] * cantidadArticulo[i]) > mejorBeneficio) {
+                    
+                    mejorBeneficio = precioArticulo[i] * cantidadArticulo[i];
+                    posicion = i
+                }
+            }
+            return posicion;
+        }
+
+
+
+        //variables o arrays
+        var articulos = new Array("manzana", "pera", "limón", "fresa");
+        var precios = new Array("1", "1.2", "1.9", "3.1");
+        var cantidadVendida = new Array();
+        var beneficio = 0;
+        var opcion = 0;
+
+        for (var i = 0; i < articulos.length; i++) {
+
+            cantidadVendida[i] = parseFloat(prompt("Introduzca los kg vendidos de " + articulos[i]));
+        }
+
+        do {
+            opcion = parseInt(prompt(
+                "Introduzca la opción elegida\n1.MOSTRAR TODO\n2.MOSTRAR UNO\n3.MAYOR VENTA\n0.SALIR"));
+
+            switch (opcion) {
+                case 1:
+
+                    for (var i = 0; i < articulos.length; i++) {
+                        document.write("Se han vendido " + cantidadVendida[i] + " kg de " + articulos[i] +
+                            " a un precio total de " + beneficio + " €." + "</br>")
+                    };
+
+                    break;
+
+                case 2:
+
+
+
+
+                    break;
+
+
+                case 3:
+                    posicionElemento = posicionMayorBeneficio(precios, cantidadVendida);
+                    document.write("El artículo con mayor ganancia es " + articulos[posicionElemento] +
+                        " con beneficio de " + (precios[posicionElemento] * cantidad[posicionElemento]));
+
+
+
+                    break;
+
+
+
+
+            }
+
+        } while (opcion !== 0);
+    </script>
+
+
+
+</body>
+
+</html>

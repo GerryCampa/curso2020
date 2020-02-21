@@ -18,6 +18,7 @@ p{
 	background-color:orange;
 	width:30%;
 	height:50%;
+	float:right;
 	
 }
 #contenido{
@@ -25,10 +26,16 @@ p{
 	
 	width:70%;
 	height:50%;
+	position:absolute;
+	left:465px;
+	bottom:205px;
+	float:left;
 }
 #pie{
 	background-color:blue;
 	height:15%;
 	width:100%;
+	float:left;
+	
 	
 }

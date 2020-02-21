@@ -1,0 +1,97 @@
+p{
+	text-align:center;
+	font-weight:bold;
+}
+ul{
+	font-weight:bold;
+}
+#cabecera{
+	background-color:#F7D10E;
+	width:100%;
+	height:15%;
+
+
+}
+
+#menu{
+	background-color:#7AFFF3;
+	width:20%;
+	height:70%;
+	float:left;
+}
+
+#principal{
+	background-color:#00C2FD;
+	width:60%;
+	height:70%;
+	float:left;
+	text-align: center;
+}
+
+
+.titulos{
+
+	
+}
+
+.pderecho{
+
+	width:40%;
+	text-align:left;
+	margin-left:10px;
+	
+}
+
+.pizquierdo{
+
+	width:60%;
+	float: right;
+	text-align: left;
+	
+}
+
+#secundario{
+	background-color:#73A1AF;
+	width:20%;
+	height:70%;
+	float:left;
+}
+
+table, th, td {
+	border: 1px solid black;
+  }
+
+  td{
+	  text-align: center;
+  }
+
+.negrita{
+
+	font-weight: bold;
+}
+
+
+  th{
+	  font-weight: bold;
+  }
+
+
+#pie{
+	background-color:#F7D10E;
+	width:100%;
+	height:15%;
+	float:left;
+}
+
+.iconos{
+
+	font-size: 50px;
+	position: absolute;
+	bottom:30px;
+	left:1100px;
+	
+	
+}
+
+
+}

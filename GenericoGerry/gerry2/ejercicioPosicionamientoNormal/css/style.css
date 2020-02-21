@@ -1,0 +1,34 @@
+body{
+	background-color:75D6FF;
+	font-family:arial;
+	font-weight:bold;
+	padding:10px;
+	width:100%;
+	height:100%;
+	
+}
+p{
+	padding:10px;
+}
+#cabecera{
+	background-color:red;
+	height:15%;
+}
+#navegacion{
+	background-color:orange;
+	width:30%;
+	height:50%;
+	
+}
+#contenido{
+	background-color:pink;
+	
+	width:70%;
+	height:50%;
+}
+#pie{
+	background-color:blue;
+	height:15%;
+	width:100%;
+	
+}

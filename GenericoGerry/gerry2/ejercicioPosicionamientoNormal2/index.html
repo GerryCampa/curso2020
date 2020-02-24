@@ -9,17 +9,162 @@
 
 	<link rel="stylesheet" type="text/CSS" href="CSS/style.css">
 
+	<!-- Librería jQuery -->
+
+	<script type="text/javascript" src="jquery-2.1.3.js"></script>
+
 	<!-- Enlace a iconos -->
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </HEAD>
 
+<script>
+	$(document).ready(function () {
+
+		// columna tabla efecto
+
+		$(".negrita").on({
+
+			mouseenter: function () {
+				$(".negrita").css("background-color", "red");
+
+			},
+
+			mouseleave: function () {
+				$(".negrita").css("background-color", "#73A1AF");
+			},
+
+		});
+
+	});
+
+	//fila tabla efecto
+	$(document).ready(function () {
+		$(".filasup").on({
+
+			mouseenter: function () {
+				$(".filasup").css("background-color", "green");
+
+			},
+
+			mouseleave: function () {
+				$(".filasup").css("background-color", "#73A1AF");
+			},
+
+		});
+
+	});
+
+	// enlaces efecto 1 (li más grande)
+	$(document).ready(function () {
+		$("li").on({
+
+			mouseenter: function () {
+				$(this).css("font-size", "30px");
+
+			},
+
+			mouseleave: function () {
+				$(this).css("font-size", "16px");
+			},
+
+		});
+
+	});
+
+
+	// enlaces efecto 2 (li4 añade lis)
+	$(document).ready(function () {
+		$(".masLis").on({
+
+			click: function () {
+				$(".masLis").append("<li>Nuevo elemento</li>");
+
+			},
+
+
+
+		});
+
+	});
+
+
+	// enlaces efecto 3 (li3 quita lis)
+	$(document).ready(function () {
+		$(".menosLis").on({
+			click: function () {
+
+				$(".masLis").remove ("li");
+				
+
+			},
+
+
+
+		});
+
+	});
+
+
+
+
+	// foto efectos
+	$(document).ready(function () {
+		$(".wiki").on({
+
+			mouseenter: function () {
+				$(".wiki").css({
+					height: "+=10%",
+					width: "+=10%"
+				});
+
+			},
+
+			mouseleave: function () {
+				$(".wiki").css({
+					height: "",
+					width: ""
+				});
+			},
+
+		});
+
+	});
+
+
+	// efectos al pinchar titulo
+	$(document).ready(function () {
+		$(".pprincipal").click(function () {
+			$('.tabla').toggle("slow");
+		});
+		$(".pprincipal").click(function () {
+			$('.pderecho').toggle("fast");
+		});
+		$(".pprincipal").click(function () {
+			$(".pizquierdo").toggle(5000);
+		});
+		$(".pprincipal").click(function () {
+			$("#menu").toggle(2500);
+		});
+	});
+</script>
+
 <BODY>
+
+	<div class="foto">
+		<img class="wiki"
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png"
+			alt="logo de wikipedia">
+
+	</div>
 
 
 	<div id="cabecera">
-		<p>Cabecera</p>
+
+		<div class=pprincipal>
+			<p>Pulsa aquí</p>
+		</div>
 	</div>
 
 
@@ -28,8 +173,8 @@
 		<ul>
 			<li>Elemento 1</li>
 			<li>Elemento 2</li>
-			<li>Elemento 3</li>
-			<li>Elemento 4</li>
+			<li class="menosLis">Elemento 3</li>
+			<li class="masLis">Elemento 4</li>
 		</ul>
 	</div>
 
@@ -84,9 +229,9 @@
 
 			<table style="width:100%">
 				<tr>
-					<th>Nombre</th>
-					<th>Constelación</th>
-					<th>Distancia (al)</th>
+					<th class="filasup">Nombre</th>
+					<th class="filasup">Constelación</th>
+					<th class="filasup">Distancia (al)</th>
 				</tr>
 				<tr>
 					<td class="negrita">Sirius</td>
@@ -127,7 +272,7 @@
 
 		<div class="copyright">
 			<p>Copyright (c) 2020 All Rights Reserved</p>
-			
+
 
 		</div>
 
@@ -139,7 +284,7 @@
 			<a href="#" class="fa fa-instagram"></a>
 			<a href="#" class="fa fa-youtube"></a>
 
-		
+
 		</div>
 
 	</div>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Identificando elementos (III) </title>
+</head>
+<body>
+<h3 id="intro" >Introduccion</h3>
+<h3 id="intro2">ESTO ES UNA PRUEBA DE APLICACIÓN DOM</h3>
+<script>
+	var nodo1=document.getElementById("intro");
+
+	nodo1.onmouseover=function(){
+		var nodo2=document.getElementById("intro2");
+		nodo2.style.backgroundColor='red';	
+		this.style.color='blue';
+	}
+
+nodo1.onmouseleave=function(){
+		var nodo2=document.getElementById("intro2");
+		nodo2.style.backgroundColor='white';	
+		this.style.color='black';
+	}
+
+</script>
+</body>
+</html>

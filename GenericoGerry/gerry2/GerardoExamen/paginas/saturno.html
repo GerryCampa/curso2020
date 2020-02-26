@@ -1,0 +1,178 @@
+<HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+
+    <TITLE>Examen final módulo</TITLE> <!-- Título para la Web -->
+
+    <link rel="stylesheet" type="text/CSS" href="../css/style.css">
+
+    <!-- Librería jQuery -->
+
+    <script type="text/javascript" src="../jquery-2.1.3.js"></script>
+
+    <!-- Enlace a iconos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<script>
+    // efecto astros a la derecha
+
+    $(document).ready(function () {
+        $(".astro").on({
+
+            mouseenter: function () {
+                $(this).css("height", "50%");
+
+            },
+
+            mouseleave: function () {
+                $(this).css("height", "40%");
+            },
+
+        });
+
+    });
+
+
+
+    // enlaces efecto 1 (li más grande)
+    $(document).ready(function () {
+        $("li").on({
+
+            mouseenter: function () {
+                $(this).css("font-size", "30px");
+
+            },
+
+            mouseleave: function () {
+                $(this).css("font-size", "16px");
+            },
+
+        });
+
+    });
+
+
+
+    // galaxia efecto entrada
+    $(document).ready(function () {
+        $(".galaxia").hide(0).delay(500).fadeIn(3000)
+    });
+
+
+    //Efectos al pinchar el título
+
+    $(document).ready(function () {
+        $(".pprincipal").click(function () {
+            $(".tresprimeros").css("color", "red");
+        });
+
+
+    });
+</script>
+
+<BODY>
+
+
+
+
+    <div id="cabecera">
+
+        <div class="foto">
+            <img class="galaxia" src="../imagenes/logo_galaxia.jpg" alt="fotografia de una galaxia">
+
+        </div>
+
+        <div class=pprincipal>
+            <div class=parrafoprincipal>
+                <p>Planetas del Sistema Solar</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="menu">
+		<ul>
+			<li class="tresprimeros"><a href="https://es.wikipedia.org/wiki/Mercurio_(planeta)"></a>Mercurio</li>
+			<li class="tresprimeros"><a href="https://es.wikipedia.org/wiki/Venus_(planeta)"></a>Venus</li>
+			<li class="tresprimeros"><a href="https://es.wikipedia.org/wiki/Tierra"></a>La Tierra</li>
+			<li><a href="https://es.wikipedia.org/wiki/Marte_(planeta)">Marte</a></li>
+			<li><a href="jupiter.html">JÚPITER</a></li>
+			<li><a href="saturno.html">SATURNO</a></li>
+			<li><a href="https://es.wikipedia.org/wiki/Urano_(planeta)">Urano</a></li>
+			<li><a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)">Neptuno</a></li>
+		</ul>
+	</div>
+
+
+
+    <div id="principal">
+
+
+        <div class="intro">
+            <h1>Saturno</h1>
+        </div>
+
+
+
+        <div class="parrafo">
+            <p>Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en tamaño y masa después
+                de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su nombre proviene del dios
+                romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos. El aspecto más
+                característico de Saturno son sus brillantes anillos. Antes de la invención del telescopio, Saturno era
+                el más lejano de los planetas conocidos y, a simple vista, no parecía luminoso ni interesante. El
+                primero en observar los anillos fue Galileo en 1610,1​ pero la baja inclinación de los anillos y la baja
+                resolución de su telescopio le hicieron pensar en un principio que se trataba de grandes lunas.
+                Christiaan Huygens, con mejores medios de observación, pudo en 1659 observar con claridad los anillos.
+                James Clerk Maxwell, en 1859, demostró matemáticamente que los anillos no podían ser un único objeto
+                sólido sino que debían ser la agrupación de millones de partículas de menor tamaño. Las partículas que
+                componen los anillos de Saturno giran a una velocidad de 48 000 km/h, 15 veces más rápido que una bala.
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="imagenplaneta">
+
+        <img class="astro" src="../imagenes/saturno.jpg" alt="fotografia del sol">
+
+    </div>
+
+
+    </div>
+
+    <div id="pie">
+
+        <div class="copyright">
+            <p>Copyright (c) Gerardo de la Campa Valdés 2020. All Rights Reserved</p>
+
+
+        </div>
+
+        <div class="iconos">
+
+            <a href="https://es-es.facebook.com/" title="Enlace a Facebook" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/?lang=es" title="Enlace a Twitter" class="fa fa-twitter"></a>
+            <a href="https://es.linkedin.com/" title="Enlace a LinkedIn" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/?hl=es" title="Enlace a Instagram" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/?hl=es&gl=ES" title="Enlace a YouTube" class="fa fa-youtube"></a>
+
+
+        </div>
+
+    </div>
+
+</BODY>
+
+
+</HTML>

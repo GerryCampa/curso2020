@@ -1,0 +1,182 @@
+<HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+
+    <TITLE>Examen final módulo</TITLE> <!-- Título para la Web -->
+
+    <link rel="stylesheet" type="text/CSS" href="../css/style.css">
+
+    <!-- Librería jQuery -->
+
+    <script type="text/javascript" src="../jquery-2.1.3.js"></script>
+
+    <!-- Enlace a iconos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<script>
+    // efecto astros a la derecha
+
+    $(document).ready(function () {
+        $(".astro").on({
+
+            mouseenter: function () {
+                $(this).css("height", "50%");
+
+            },
+
+            mouseleave: function () {
+                $(this).css("height", "40%");
+            },
+
+        });
+
+    });
+
+
+
+    // enlaces efecto 1 (li más grande)
+    $(document).ready(function () {
+        $("li").on({
+
+            mouseenter: function () {
+                $(this).css("font-size", "30px");
+
+            },
+
+            mouseleave: function () {
+                $(this).css("font-size", "16px");
+            },
+
+        });
+
+    });
+
+
+    // galaxia efecto entrada
+    $(document).ready(function () {
+        $(".galaxia").hide(0).delay(500).fadeIn(3000)
+    });
+
+
+    //Efectos al pinchar el título
+
+    $(document).ready(function () {
+        $(".pprincipal").click(function () {
+            $(".tresprimeros").css("color", "red");
+        });
+
+
+    });
+</script>
+
+<BODY>
+
+
+
+
+    <div id="cabecera">
+
+        <div class="foto">
+            <img class="galaxia" src="../imagenes/logo_galaxia.jpg" alt="fotografia de una galaxia">
+
+        </div>
+
+        <div class=pprincipal>
+            <div class=parrafoprincipal>
+                <p>Planetas del Sistema Solar</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="menu">
+        <ul>
+            <li class="tresprimeros"><a href="https://es.wikipedia.org/wiki/Mercurio_(planeta)"></a>Mercurio</li>
+            <li class="tresprimeros"><a href="https://es.wikipedia.org/wiki/Venus_(planeta)"></a>Venus</li>
+            <li class="tresprimeros"><a href="https://es.wikipedia.org/wiki/Tierra"></a>La Tierra</li>
+            <li><a href="https://es.wikipedia.org/wiki/Marte_(planeta)">Marte</a></li>
+            <li><a href="jupiter.html">JÚPITER</a></li>
+            <li><a href="saturno.html">SATURNO</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Urano_(planeta)">Urano</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)">Neptuno</a></li>
+        </ul>
+    </div>
+
+
+
+    <div id="principal">
+
+
+        <div class="intro">
+            <h1>Júpiter</h1>
+        </div>
+
+
+
+        <div class="parrafo">
+            <p>Júpiter es el quinto planeta del sistema solar. Forma parte de los denominados planetas exteriores o
+                gaseosos. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega).
+
+                Se trata del planeta que ofrece un mayor brillo a lo largo del año dependiendo de su fase. Es, además,
+                después del Sol, el mayor cuerpo celeste del sistema solar, con una masa casi dos veces y media la de
+                los demás planetas juntos (con una masa 318 veces mayor que la de la Tierra y tres veces mayor que la de
+                Saturno, además de ser, en cuanto a volumen, 1317 veces más grande que la Tierra). También es el planeta
+                más antiguo del sistema solar, siendo incluso más antiguo que el sol; este descubrimiento fue realizado
+                por investigadores de la universidad de Münster en Alemania.3​ 4​
+
+                Júpiter es un cuerpo masivo gaseoso, formado principalmente por hidrógeno y helio, carente de una
+                superficie interior definida. Entre los detalles atmosféricos es notable la Gran Mancha Roja (un enorme
+                anticiclón situado en las latitudes tropicales del hemisferio sur), la estructura de nubes en bandas
+                oscuras y zonas brillantes, y la dinámica atmosférica global determinada por intensos vientos zonales
+                alternantes en latitud y con velocidades de hasta 140 m/s (504 km/h).
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="imagenplaneta">
+
+        <img class="astro" src="../imagenes/jupiter.jpg" alt="fotografia del sol">
+
+    </div>
+
+
+    </div>
+
+    <div id="pie">
+
+        <div class="copyright">
+            <p>Copyright (c) Gerardo de la Campa Valdés 2020. All Rights Reserved</p>
+
+
+        </div>
+
+        <div class="iconos">
+
+            <a href="https://es-es.facebook.com/" title="Enlace a Facebook" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/?lang=es" title="Enlace a Twitter" class="fa fa-twitter"></a>
+            <a href="https://es.linkedin.com/" title="Enlace a LinkedIn" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/?hl=es" title="Enlace a Instagram" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/?hl=es&gl=ES" title="Enlace a YouTube" class="fa fa-youtube"></a>
+
+
+        </div>
+
+    </div>
+
+</BODY>
+
+
+</HTML>

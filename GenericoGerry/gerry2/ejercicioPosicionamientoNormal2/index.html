@@ -148,7 +148,7 @@
 			$(".iconos").slideToggle(2500);
 		});
 		$(".pprincipal").click(function () {
-			$(".wiki").fadeOut(2500);
+			$(".wiki").fadeToggle(2500);
 		});
 	
 
@@ -161,15 +161,17 @@
 
 <BODY>
 
-	<div class="foto">
-		<img class="wiki"
-			src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png"
-			alt="logo de wikipedia">
-
-	</div>
+	
 
 
 	<div id="cabecera">
+
+		<div class="foto">
+			<img class="wiki"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png"
+				alt="logo de wikipedia">
+	
+		</div>
 
 		<div class=pprincipal>
 			<p>Pulsa aquí</p>

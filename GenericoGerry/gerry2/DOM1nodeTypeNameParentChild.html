@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Identificando elementos (II) </title>
+</head>
+<body>
+<ul>
+  <li><a href="uno.html">El primer enlace</a></li>
+  <li class="miClase"><a href="dos.html" target="new">El segundo enlace</a></li>
+  <li><a href="tres.html">El tercer enlace</a></li>
+</ul>
+
+<script>
+	var nodos=document.getElementsByTagName("li");
+	var nodo;
+	
+	//propiedades nodo
+	for(var i=0;i<nodos.length;i++){
+		nodo=nodos[i];
+		document.write("ELEMENTO NUMERO "+(i+1)+"<br/>");
+		document.write("PROPIEDADES DEL NODO<br/>");
+		document.write("Tipo de nodo: "+nodo.nodeType+"<br/>");
+		document.write("Nombre del nodo: "+nodo.nodeName.toLowerCase()+"<br/>");
+		document.write("Clase: "+nodo.className+"<br/>");
+		document.write("Padre: "+nodo.parentNode.nodeName+"<br/>");
+		document.write("N Hijos: "+nodo.parentNode.childNodes.length+"<br/>");
+		document.write("Primer Hijo: "+nodo.firstChild.nodeName+"<br/>");
+		document.write("Ultimo HIjo: "+nodo.lastChild.nodeName+"<br/>");
+		document.write("***********************"+"<br/>");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If else</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Realizar un programa  que Escriba, cuente y calcule la media
+            de los los números del 100 al 0 cambiando de 7 en 7.
+            Utilizar un bucles while
+            y tres funciones:una para mostrarlos, otra para contarlos y otra para
+            calcular la media</h1>
+<script>
+/*
+REalizar un programa  que Escriba, cuente y calcule la media
+de los los números del 100 al 0 cambiando de 7 en 7.
+Utilizar un bucles while
+y tres funciones:una para mostrarlos, otra para contarlos y otra para
+calcular la media
+*/
+
+function mostrarNumeros(){
+	var numero=100;
+	while(numero>=0){
+		document.write(numero+" ");
+		numero=numero-7;//numero-=7
+	}
+	
+}
+
+function contarNumeros(){
+	var contador=0;
+	var numero=100;
+	while(numero>=0){
+		contador++;
+		numero-=7;
+	}
+	return contador;
+}
+
+function sumaNumeros(){
+	var suma=0;
+
+	
+	for(var i=100;i>=0;i-=7){
+		suma+=i;
+		}
+	
+	return suma;
+
+}
+
+//programaPrincipal
+mostrarNumeros();
+document.write("<br/>HAY "+contarNumeros()+" numeros");
+document.write("<br/>LA SUMA DE LOS NUMEROS ES "+sumaNumeros());
+document.write("<br/>LA MEDIA ES "+(sumaNumeros()/contarNumeros()));
+</script>
+    </div>
+</body>
+
+</html>

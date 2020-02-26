@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If else</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>BUCLE</h1>
+<script>
+//REalizar un programa que muestre la suma de los
+// numeros pares y multiplos de 3(a la vez)
+//que hay desde el nº 1000 hasta el nº1110
+//ayudarse de funciones
+
+function SumaMultiplos(){
+	var suma=0;
+	for(var i=1000;i<=1110;i++){
+		if(i%2==0&&i%3==0){
+			suma=suma+i;
+		}
+	
+	}
+return suma;	
+}
+
+
+
+
+var resultado;
+//programaPrincipal
+resultado=SumaMultiplos();
+document.write("La suma de los numeros del 1000 al 1110 es "+resultado);
+
+
+
+
+
+
+
+</script>
+    </div>
+</body>
+
+</html>

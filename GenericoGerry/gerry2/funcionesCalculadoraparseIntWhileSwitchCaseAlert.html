@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>funciones parseInt while switch case alert</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script language="javascript" type="text/javascript" src="funciones.js">
+
+	</script>
+
+</head>
+
+<body>
+	<div id="contenedor">
+		<h1>CALCULADORA</h1>
+		<script>
+			/*
+Realizar una calculadora para gestionar operaciones entre dos numeros.
+La calculadora debe permitir las siguientes operaciones:
+
+-suma,resta,multiplicacion, division(mayor/menor), mayor,menor,potencia,factorial 
+factorial(debe mostrar el factorialde los dos numeros). 
+-primo
+
+Utilizar funciones para el ejercicio. Ej:
+
+function suma(a,b)---- >Funcion que retorne la suma de los parametros
+
+La operación debe pedirse en una "especie de menu"
+La calculadora debe de seguir "funcionando" hasta que el usuario quiera.
+*/
+
+			//---------FUNCIONES------------------
+			function suma(a, b) {
+				return (a + b);
+			}
+
+			function resta(a, b) {
+				return (a - b);
+			}
+
+			function multiplicacion(a, b) {
+				return (a * b);
+			}
+
+			function division(a, b) {
+				var resultado;
+				if (a >= b) {
+					resultado = a / b;
+				} else {
+					resultado = b / a;
+				}
+				return resultado;
+			}
+
+			function mayor(a, b) {
+				var resultado;
+				if (a >= b) {
+					resultado = a;
+				} else {
+					resultado = b;
+				}
+				return resultado;
+			}
+
+			function menor(a, b) {
+				var resultado;
+				if (a <= b) {
+					resultado = a;
+				} else {
+					resultado = b;
+				}
+				return resultado;
+			}
+
+			function potencia(a, b) {
+				//devolvera a elevado a b/a
+				var resultado = 1;
+				for (var i = 0; i < b; i++) {
+					resultado = resultado * a; //resultado*=a
+				}
+				return resultado;
+			}
+
+			function factorial(a) {
+				var resultado = 1;
+				for (i = a; i >= 1; i--) {
+					resultado = resultado * i;
+
+				}
+				return resultado;
+			}
+			//------------------------------------------
+
+			var operacion;
+			var numero1, numero2;
+
+			operacion = parseInt(prompt(
+				"Introduzca una operacion:\n1.SUMAR\n2.RESTAR\n3.RESTAR\n4.MULTIPLICAR\n5.MAYOR\n6.MENOR\n7.POTENCIA\n8.FACTORIAL\n0.SALIR"
+				));
+
+			while (operacion != 0) {
+				numero1 = parseInt(prompt("Introduzca un numero"));
+				numero2 = parseInt(prompt("Introduzca otro numero"));
+
+				switch (operacion) {
+					case 1:
+						alert("La suma es " + suma(numero1, numero2));
+						break;
+					case 2:
+						alert("La resta es " + resta(numero1, numero2));
+						break;
+					case 3:
+						alert("La multiplicacion es " + multiplicacion(numero1, numero2));
+						break;
+					case 4:
+						alert("La division es " + division(numero1, numero2));
+						break;
+					case 5:
+						alert("El mayor es " + mayor(numero1, numero2));
+						break;
+					case 6:
+						alert("El menor es " + menor(numero1, numero2));
+						break;
+					case 7:
+						alert("La potencia es" + potencia(numero1, numero2));
+						break;
+					case 8:
+						alert("El factorial del primer numero es " + factorial(numero1) + "\nEl factorial del segundo es " +
+							factorial(numero2));
+						break;
+					default:
+						alert("No existe la opcion seleccionada");
+
+				}
+
+				operacion = parseInt(prompt(
+					"Introduzca una operacion:\n1.SUMAR\n2.RESTAR\n3.RESTAR\n4.MULTIPLICAR\n5.MAYOR\n6.MENOR\n7.POTENCIA\n8.FACTORIAL\n0.SALIR"
+					));
+			}
+			document.write("FIN DE PROGRAMA");
+		</script>
+	</div>
+</body>
+
+</html>

@@ -20,9 +20,9 @@
 </HEAD>
 
 <script>
-	$(document).ready(function () {
+	// columna tabla efecto
 
-		// columna tabla efecto
+	$(document).ready(function () {
 
 		$(".negrita").on({
 
@@ -95,8 +95,13 @@
 		$(".menosLis").on({
 			click: function () {
 
+<<<<<<< HEAD
 				$('.masLis li:last-child').remove();
 				
+=======
+				$(".masLis").remove("li");
+
+>>>>>>> 20ff0930c74e1678d31120c6fcce42521133e73c
 			},
 
 		});
@@ -131,10 +136,10 @@
 	// efectos al pinchar titulo
 	$(document).ready(function () {
 		$(".pprincipal").click(function () {
-			$('.tabla').toggle("slow");
+			$('#secundario').toggle("slow");
 		});
 		$(".pprincipal").click(function () {
-			$('.pderecho').toggle("fast");
+			$('#principal').toggle(5000);
 		});
 		$(".pprincipal").click(function () {
 			$(".pizquierdo").toggle(5000);
@@ -142,20 +147,34 @@
 		$(".pprincipal").click(function () {
 			$("#menu").toggle(2500);
 		});
+		$(".pprincipal").click(function () {
+			$(".iconos").slideToggle(2500);
+		});
+		$(".pprincipal").click(function () {
+			$(".wiki").fadeToggle(2500);
+		});
+	
+
+
+
+
+
 	});
 </script>
 
 <BODY>
 
-	<div class="foto">
-		<img class="wiki"
-			src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png"
-			alt="logo de wikipedia">
-
-	</div>
+	
 
 
 	<div id="cabecera">
+
+		<div class="foto">
+			<img class="wiki"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png"
+				alt="logo de wikipedia">
+	
+		</div>
 
 		<div class=pprincipal>
 			<p>Pulsa aquí</p>

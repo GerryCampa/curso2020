@@ -95,18 +95,13 @@
 		$(".menosLis").on({
 			click: function () {
 
-				$(".masLis").remove ("li");
+				$('.masLis li:last-child').remove();
 				
-
 			},
-
-
 
 		});
 
 	});
-
-
 
 
 	// foto efectos
@@ -173,8 +168,8 @@
 		<ul>
 			<li>Elemento 1</li>
 			<li>Elemento 2</li>
-			<li class="menosLis">Elemento 3</li>
-			<li class="masLis">Elemento 4</li>
+			<li class="masLis">Pincha aquí para añadir lis</li>
+			<li class="menosLis">Pincha aquí quitarlos</li>
 		</ul>
 	</div>
 

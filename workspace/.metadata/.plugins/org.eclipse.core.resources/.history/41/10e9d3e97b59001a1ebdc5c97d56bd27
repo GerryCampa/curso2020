@@ -1,0 +1,15 @@
+package primero;
+
+public class EntradaDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int numero1;
+		double numero2;
+		String ciudad;
+		Scanner sc=new Scanner(System.in);
+
+	}
+
+}

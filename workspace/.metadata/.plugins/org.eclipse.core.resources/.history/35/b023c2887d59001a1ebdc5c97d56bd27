@@ -1,0 +1,26 @@
+package primero;
+
+import java.util.Scanner;
+
+public class EntradaDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int numero1;
+		double numero2;
+		String ciudad;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Introduzca el nombre de su ciudad");
+		ciudad=sc.nextLine();
+		System.out.println("Introduzca número natural");
+		numero1=sc.nextInt();
+		System.out.println("Introduzca un número decimal");
+		numero2=sc.nextDouble();
+		
+		
+		System.out.println("Has introducido "+numero1+ " y como valor decimal "+numero2+ " y como ciudad "+ciudad);
+
+	}
+
+}

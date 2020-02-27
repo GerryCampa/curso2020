@@ -1,0 +1,19 @@
+package primero;
+
+public class EjemploVariables {
+
+	public static void main(String[] args) {
+		// ejemplo de declaracion, inicializacion y uso de variables
+		int numero=10; //variable entera de valor 10
+		int numeroa, numerob;
+		double numeroDecimal=30.5;
+		String nombre="Ángel";
+		
+		//operaciones con variables
+		numeroa=numero*10;
+		
+		System.out.printlin("Mi nombre es "+nombre);
+
+	}
+
+}

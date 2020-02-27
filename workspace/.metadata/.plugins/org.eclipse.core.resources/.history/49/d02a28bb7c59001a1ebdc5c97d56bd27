@@ -1,0 +1,19 @@
+package primero;
+
+import java.util.Scanner;
+
+public class EntradaDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int numero1;
+		double numero2;
+		String ciudad;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Introduzca número natural");
+		numero1=sc.nextInt();
+
+	}
+
+}

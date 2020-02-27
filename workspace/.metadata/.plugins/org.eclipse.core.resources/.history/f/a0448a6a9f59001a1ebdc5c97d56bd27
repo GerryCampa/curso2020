@@ -1,0 +1,26 @@
+package bucles;
+
+import java.util.Scanner;
+
+public class TablaMultiplicarFactorial {
+
+	public static void main(String[] args) {
+		// Pedir número. Hacer su tabla de multiplicar y su factorial
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int numero;
+		
+		numero = sc.nextInt();
+		
+		for (i=1;i=10;i++){
+			
+			System.out.println(numero*i);
+			
+		}
+
+		
+
+	}
+
+}

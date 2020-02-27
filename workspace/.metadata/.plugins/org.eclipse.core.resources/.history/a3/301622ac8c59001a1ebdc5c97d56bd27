@@ -1,0 +1,36 @@
+package condicional;
+
+import java.util.Scanner;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+		// Realizar un programa que pida dos numeros y un operador y devuelva el
+		// resultado de la operacion.. Usar switch
+		// La resta y la division tienen q ser entre el número mayor y el número
+		// menor
+
+		float numero1;
+		float numero2;
+		String operador;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Introduzca el tipo de operación");
+		operador = sc.nextLine();
+		System.out.println("Introduzca el primero número");
+		numero1 = sc.nextFloat();
+		System.out.println("Introduzca el segundo número");
+		numero2 = sc.nextFloat();
+
+		switch (operador) {
+
+		case "+":
+			System.out.println("La suma de " + numero1 + " y " + numero2 + " es " + (numero1 + numero2));
+			break;
+
+		default:
+			System.out.println("Has introducido un mes que no existe");
+
+		}
+	}
+}

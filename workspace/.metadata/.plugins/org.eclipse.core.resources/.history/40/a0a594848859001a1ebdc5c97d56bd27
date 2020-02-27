@@ -1,0 +1,25 @@
+package condicional;
+
+public class DiasMes {
+
+	public static void main(String[] args) {
+		// pedirá un mes y dice cuántos dias tiene ese mes
+		
+		String mes;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Introduzca el nombre del mes");
+		mes=sc.nextline();
+		
+		switch(mes){
+		
+		case "enero":System.out.println("Enero tiene 31 días");
+		break;
+		case "febrero":System.out.println("Febrero tiene 28 días");
+		break;
+		
+		default:System.out.println("Has introducido un mes que no existe")
+		
+		}
+	}
+
+}

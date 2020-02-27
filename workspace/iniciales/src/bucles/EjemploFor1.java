@@ -1,0 +1,41 @@
+package bucles;
+
+import java.util.Scanner;
+
+public class EjemploFor1 {
+
+	public static void main(String[] args) {
+		// blucle que pida 10 numeros y muestre la media de los positivos
+		// la media de los negativos y el numero de ceros introducidos
+
+		int numero;
+		int sumaPositivos = 0;
+		int sumaNegativos = 0;
+		int contadorPositivos = 0;
+		int contadorNegativos = 0;
+		int contadorCeros = 0;
+
+		Scanner sc = new Scanner(System.in);
+
+		for (int i = 0; i < 10; i++) {
+
+			System.out.println("Introduzca un número");
+			numero = sc.nextInt();
+			if (numero > 0) {
+				sumaPositivos = sumaPositivos + numero;
+				contadorPositivos++;
+			} else if (numero < 0) {
+				sumaNegativos = sumaNegativos + numero;
+				contadorNegativos++;
+			} else {
+				contadorCeros++;
+			}
+
+		}
+		System.out.println("La media de los positivos es " + (sumaPositivos / contadorPositivos));
+		System.out.println("La media de los negativos es " + (sumaNegativos / contadorNegativos));
+		System.out.println("La el total de ceros es " + contadorCeros);
+
+	}
+
+}

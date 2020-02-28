@@ -1,0 +1,25 @@
+package Primeros;
+
+public class RectanguloPrincipal {
+
+	public static void main(String[] args) {
+		// creamos tres rectangulos
+		
+		Rectangulo r1, r2, r3;
+		
+		r1= new Rectangulo(8.7,4.5);
+		System.out.println("El área del rectángulo  1 es "+r1.area());
+		System.out.println("El perímetro del rectángulo de base  "+r1.base+ " y altura " +r1.altura+" es "+r1.perimetro());
+		
+		r2= new Rectangulo(2,5);
+		System.out.println("El área del rectángulo es "+r2.area());
+		System.out.println("El perímetro del rectángulo es "+r2.perimetro());
+		
+		r3= new Rectangulo(8.7,4.5);
+		System.out.println("El área del rectángulo es "+r3.area());
+		System.out.println("El perímetro del rectángulo es "+r3.perimetro());
+
+
+	}
+
+}

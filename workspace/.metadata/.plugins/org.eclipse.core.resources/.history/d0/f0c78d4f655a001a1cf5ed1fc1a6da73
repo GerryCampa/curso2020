@@ -1,0 +1,26 @@
+package concesionario;
+
+import biblioteca.Libro;
+
+public class EmpresaPepitoPerez {
+
+	public static void main(String[] args) {
+		// crear dos objetos
+		
+		Coches cocheEmpresaVentas, cocheEmpresaDireccion;
+		
+		cocheEmpresaVentas= new Coches("Seat","Panda","rojo","5555KKK");
+		cocheEmpresaDireccion= new Coches("0000BBB");
+		
+		cocheEmpresaVentas.imprimeCoche();
+		
+		System.out.println("La matrícula del coche de ventas "+cocheEmpresaVentas.getMatricula());
+		System.out.println("La matrícula del coche del jefe "+cocheEmpresaDireccion.getMatricula());
+
+	
+
+		
+		
+	}
+
+}

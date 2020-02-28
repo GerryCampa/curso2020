@@ -1,0 +1,66 @@
+package concesionario;
+
+public class Coches {
+
+	// propiedades
+	private String marca;// a
+	private String modelo;// b
+	private String color;// c
+	private boolean metalizado;
+	private String matricula;// d
+	private int yearMade;
+
+	// constructor inicializar matricula
+
+	public Coches(String d) {
+
+		this.matricula = d;
+
+	}
+	// constructor inicializar matricula, marca, modelo, color,
+
+	public Coches(String a, String b, String c, String d) {
+
+		this.marca = a;
+		this.modelo = b;
+		this.color = c;
+		this.matricula = d;
+
+	}
+
+	public void imprimeCoche() {
+
+		System.out
+				.println("Tiene un coche marca " + this.marca + " modelo: " + this.modelo + " de color " + this.color);
+	}
+
+	// metodo para hacer accesible la matricula private
+	public String getMatricula() {
+		return this.matricula;
+	}
+
+	// metodo para hacer accesible la marca private
+	public String getMarca() {
+		return this.marca;
+	}
+
+	// metodo para hacer accesible el modelo private
+	public String getModelo() {
+		return this.modelo;
+	}
+
+	// metodo para PODER CAMBIAR el color que tb es private
+	public void setColor(String c) {
+		this.color = c;
+	}
+	
+	// metodo para PODER CAMBIAR el los datos del coche de la hija
+	public void setMarca(String a) {
+			this.marca = a;
+		}
+	public void setModelo(String b) {
+		this.modelo = b;
+	}
+
+
+}

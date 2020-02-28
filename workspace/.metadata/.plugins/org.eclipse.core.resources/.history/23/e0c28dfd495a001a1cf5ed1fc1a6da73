@@ -1,0 +1,46 @@
+package Primeros;
+
+import java.util.Scanner;
+
+public class RectanguloPrincipal {
+
+	public static void main(String[] args) {
+		// creamos tres rectángulos
+
+		Rectangulo r1, r2, r3;
+		Scanner sc;
+		sc = new Scanner(System.in);
+		double numero1;
+		double numero2;
+		double totalArea;
+
+		r1 = new Rectangulo(8.7, 4.5);
+		System.out.println("El área del rectángulo  1 es " + r1.area());
+		System.out.println(
+				"El perímetro del rectángulo de base  " + r1.base + " y altura " + r1.altura + " es " + r1.perimetro());
+
+		r2 = new Rectangulo(2, 5);
+		r2.mostrar();
+
+		System.out.println("Introduzca la base del rectángulo");
+		numero1 = sc.nextDouble();
+		System.out.println("Introduzca la altura del rectángulo");
+		numero2 = sc.nextDouble();
+		r3 = new Rectangulo(numero2, numero1);
+		r3.mostrar();
+		
+		totalArea=r1.area()+r2.area()+r3.area();
+		System.out.println("\n\n La suma total de áreas es "+totalArea);
+		
+		//mostrar el area del rectangulo mayor entre r1 y r2
+		
+		if(r1.area()>r2.area()){
+			System.out.println("El rectángulo mayor es el r1 y su área es "+r1.area());
+		}else{
+			System.out.println("El rectángulo mayor es el r2 y su área es "+r2.area());
+
+		}
+
+	}
+
+}

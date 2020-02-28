@@ -1,0 +1,35 @@
+package concesionario;
+
+import biblioteca.Libro;
+
+public class EmpresaPepitoPerez {
+
+	public static void main(String[] args) {
+		// EJECUTABLE. Este archivo es una clase ejecutable.
+		
+		
+		//Definir dos objetos
+		Coches cocheEmpresaVentas, cocheEmpresaDireccion;
+		
+		//Crear dos objetos
+		cocheEmpresaVentas= new Coches("Seat","Panda","rojo","5555KKK");
+		cocheEmpresaDireccion= new Coches("0000BBB");
+		
+		//Invocar metodo para mostrar datos coche de ventas
+		//cambiar color del coche de rojo a azul
+		cocheEmpresaVentas.color="azul";
+		cocheEmpresaVentas.imprimeCoche();
+		
+		
+		//Invocar metodo para visualizar ambas matriciculas. PROBLEMA las variables son private. Para resolver esto creamos un metodo en coches.java
+		
+		System.out.println("La matrícula del coche de ventas "+cocheEmpresaVentas.getMatricula());
+		System.out.println("La matrícula del coche del jefe "+cocheEmpresaDireccion.getMatricula());
+
+	
+
+		
+		
+	}
+
+}

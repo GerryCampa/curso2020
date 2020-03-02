@@ -1,0 +1,44 @@
+package rectangulo;
+
+import java.util.Scanner;
+
+public class RectanguloPrincipal {
+
+	public static void main(String[] args) {
+		
+		Rectangulo r1,r2,r3;//declaro tres rectangulos
+		Scanner sc;
+		sc=new Scanner(System.in);
+		double numero1,numero2;
+		double totalArea;
+		
+		r1=new Rectangulo(4.5,8.7);
+		r1.mostrar();
+		System.out.println("*****************");
+		System.out.println("*****************");
+		r2=new Rectangulo(5,2);
+		r2.mostrar();
+		
+	
+		
+		System.out.println("Introduzca la base del Rectangulo");
+		numero1=sc.nextDouble();
+		System.out.println("Introduzca la altura del Rectangulo");
+		numero2=sc.nextDouble();
+		r3=new Rectangulo(numero1,numero2);
+		r3.mostrar();
+		
+		totalArea=r1.area()+r2.area()+r3.area();
+		System.out.println("\n\nLa suma de las areas de las parcelas es "+totalArea);
+		
+		//mostrar el area del rectangulo mayor de r1 y r2
+		if(r1.area()>r2.area()&&r1.area()>r3.area()){
+			System.out.println("El rectangulo con mayor area es "+r1.area());
+		}else{
+			System.out.println("El rectangulo con mayor area es "+r2.area());
+		}
+		
+		
+	}
+
+}
